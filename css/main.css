@@ -1,8 +1,9 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box; }
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
 
 #vantaNet {
   position: absolute;
@@ -12,7 +13,8 @@
   top: 0;
   bottom: 0;
   left: 0;
-  right: 0; }
+  right: 0;
+}
 
 header {
   position: absolute;
@@ -23,8 +25,8 @@ header {
   justify-content: space-between;
   padding: 40px 100px;
   z-index: 100000;
-  transition: 0.6s; }
-
+  transition: 0.6s;
+}
 header .logo {
   position: relative;
   font-weight: 700;
@@ -32,10 +34,10 @@ header .logo {
   text-decoration: none;
   font-size: 1.3em;
   letter-spacing: 2px;
-  transition: 0.6s; }
-
+  transition: 0.6s;
+}
 header .logo:after {
-  content: 'clicking this leads to nowhere';
+  content: "clicking this leads to nowhere";
   font-weight: 100;
   font-size: 0.2em;
   text-align: center;
@@ -47,22 +49,23 @@ header .logo:after {
   left: 0;
   background-color: white;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out; }
-
+  transition: transform 0.25s ease-out;
+}
 header .logo:hover:after {
   transform: scaleX(1);
-  transform-origin: bottom left; }
-
+  transform-origin: bottom left;
+}
 header #infoicon {
   position: relative;
   cursor: pointer;
   color: white;
-  transition: 0.2s; }
-
+  transition: 0.2s;
+}
 header #infoicon:hover {
   position: relative;
   cursor: pointer;
-  color: orange; }
+  color: orange;
+}
 
 .banner {
   position: relative;
@@ -70,77 +73,82 @@ header #infoicon:hover {
   min-height: 100vh;
   padding: 100px;
   display: flex;
-  align-items: center; }
-
-.container {
+  align-items: center;
+}
+.banner .container {
   position: relative;
   display: flex;
   justify-content: left;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+}
 
 .content {
-  width: 55%; }
-
-#intro span {
+  width: 55%;
+}
+.content #intro span {
   color: orange;
-  font-size: 1.2em; }
-
+  font-size: 1.2em;
+}
 .content #greeting {
   color: white;
   font-size: 5.2em;
-  transform: translateX(-4px); }
-
+  transform: translateX(-4px);
+}
 .content #intro {
   color: white;
-  font-size: 2em; }
-
+  font-size: 2em;
+}
 .content p {
   font-size: 1.2em;
   color: #d8d8d8;
   font-weight: 300;
   padding-top: 20px;
-  padding-bottom: 20px; }
-
-.contact {
+  padding-bottom: 20px;
+}
+.content .contact {
   position: relative;
   padding-top: 15px;
-  display: block; }
-
-.media {
+  display: block;
+}
+.content .media {
   padding-top: 15px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 35%; }
-
-.media a {
+  max-width: 35%;
+}
+.content .media a {
   background-color: transparent;
-  padding: 0; }
-
-.media i {
+  padding: 0;
+}
+.content .media i {
   color: white;
-  transition: 0.5s; }
-
-.media i:hover {
-  color: orange; }
+  transition: 0.5s;
+}
+.content .media i:hover {
+  color: orange;
+}
 
 #learn {
   font-weight: 600;
   font-size: 1em;
   position: relative;
-  color: white; }
+  color: white;
+}
 
 #learn span {
   font-weight: 600;
   font-size: 1em;
-  color: white; }
+  color: white;
+}
 
 .zdog-canvas {
   left: 7%;
   position: relative;
   vertical-align: middle;
-  cursor: grab; }
+  cursor: grab;
+}
 
 footer {
   text-align: right;
@@ -152,7 +160,8 @@ footer {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.397);
   padding-right: 100px;
-  padding-bottom: 20px; }
+  padding-bottom: 20px;
+}
 
 /* Responsive */
 /*
@@ -162,12 +171,20 @@ Todo:
 */
 @media only screen and (max-width: 800px) {
   .content {
-    width: 100%; }
+    width: 100%;
+  }
+
   .media {
     padding-top: 15px;
     position: relative;
     display: flex;
     justify-content: space-around;
-    max-width: 100%; }
+    max-width: 100%;
+  }
+
   .banner {
-    background-color: #292929; } }
+    background-color: #292929;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
