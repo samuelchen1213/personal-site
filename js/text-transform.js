@@ -44,11 +44,16 @@ Typewriter.prototype.type = function() {
     setTimeout(() => this.type(), 300)
 }
 
-document.addEventListener('DOMContentLoaded', init);
+document.addEventListener('DOMContentLoaded', bufferinit);
+
 function init() {
     const txtElement = document.querySelector('.txt-type');
     const words = JSON.parse(txtElement.getAttribute('data-words'));
     const wait = txtElement.getAttribute('data-wait');
     // Init Typewriter
     new Typewriter(txtElement, words, wait);
+}
+
+function bufferinit() {
+    setTimeout(init, 500);
 }

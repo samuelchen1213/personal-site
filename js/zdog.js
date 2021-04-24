@@ -61,7 +61,7 @@ ring.copy({
 })
 
 function animate() {
-  illo.rotate.y += isSpinning ? 0.1 : 0;
+  illo.rotate.y += isSpinning ? 0.06 : 0;
   illo.updateRenderGraph();
   requestAnimationFrame( animate );
 }
