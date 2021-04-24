@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Chen</title>
+    <meta name="description" content="Samuel Chen's portfolio">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r79/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.1.9/p5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.topology.min.js"></script>
+    <script src="https://kit.fontawesome.com/2219fb40ea.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script>
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+</head>
+<body>
+    <!-- Are you snooping through my code? -->
+    <div id="vantaNet">
+        <section class="banner" id="sec">
+            <header>
+                <a href="#" class="logo">samuel chen.</a>
+                <i class="fas fa-info-circle fa-lg" id="infoicon"></i>
+            </header>
+            <div class="container">
+                <div class="content">
+                    <h2 id="greeting"><span class="txt-type" data-wait="3000" data-words='["Hello!"]'></span></h2>
+                    <h2 id="intro">My name is&nbsp<span>Samuel Chen</span></h2>
+                    
+                    <div class="info-contact">
+                        <div id="information">
+                            <p>
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
+                            </p>
+                        </div>
+                
+                        <div class="contact">
+                            <h2 id="learn">Learn more about my&nbsp<span id="description">...</span></h2>
+                            <div class="media">
+                                <div class="item" onmouseover="changeText('resume')" onmouseout="changeOriginal()">
+                                    <a href="Resume (Samuel Chen).pdf" target="_blank">
+                                        <i class="far fa-user-circle fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="item" onmouseover="changeText('notion')" onmouseout="changeOriginal()">
+                                    <a href="https://www.notion.so/samuelchen1213/Samuel-s-Library-be48e7582aed4f25b3ba58c109950cc3" target="_blank">
+                                        <i class="fas fa-book fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="item" onmouseover="changeText('linkedin')" onmouseout="changeOriginal()">
+                                    <a href="">
+                                        <i class="fab fa-linkedin fa-2x"></i>
+                                    </a>
+                                </div>
+                                <div class="item" onmouseover="changeText('email')" onmouseout="changeOriginal()">
+                                    <a href="mailto:samuelchen1213@gmail.com">
+                                        <i class="fas fa-envelope fa-2x"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <canvas class="zdog-canvas" width="400" height="400"></canvas>
+            </div>
+        </section>
+    </div>   
+    
+    <script src="zdog.js"></script>
+    <script src="vanta-settings.js"></script>
+    <script src="text-transform.js"></script>
+</body>
+</html>
