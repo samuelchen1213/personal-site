@@ -167,6 +167,19 @@ header #infoicon:hover {
     cursor: grab;
 }
 
+footer {
+    text-align: right;
+    font-size: 0.2em;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.397);
+    padding-right: 100px;
+    padding-bottom: 20px;
+}
+
 /* Responsive */
 /*
 Todo:
