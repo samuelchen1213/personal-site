@@ -28,6 +28,7 @@ header {
   transition: 0.6s;
 }
 header .logo {
+  opacity: 0;
   position: relative;
   font-weight: 700;
   color: white;
@@ -56,6 +57,7 @@ header .logo:hover:after {
   transform-origin: bottom left;
 }
 header #infoicon {
+  opacity: 0;
   position: relative;
   cursor: pointer;
   color: white;
@@ -83,6 +85,7 @@ header #infoicon:hover {
   flex-wrap: wrap;
 }
 .banner .zdog-container {
+  opacity: 0;
   display: flex;
   flex-grow: 1;
   justify-content: center;
@@ -91,6 +94,9 @@ header #infoicon:hover {
   position: relative;
   vertical-align: middle;
   cursor: grab;
+}
+.banner .info-contact {
+  opacity: 0;
 }
 
 .content {
@@ -108,6 +114,7 @@ header #infoicon:hover {
 .content #intro {
   color: white;
   font-size: 2em;
+  opacity: 0;
 }
 .content p {
   font-size: 1.2em;
@@ -163,6 +170,9 @@ footer {
   color: rgba(255, 255, 255, 0.397);
   padding-right: 100px;
   padding-bottom: 20px;
+}
+footer .copyright {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */

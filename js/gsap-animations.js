@@ -1,42 +1,47 @@
 // Intro animation
 TweenMax.from("#intro", 2, {
     delay: 2.8,
-    opacity: 0,
-    y: -20,
-    ease: Power1.easeOut
+    y: -40,
+    ease: Power4.easeOut
+});
+TweenMax.to("#intro", 2, {
+    delay: 2.8,
+    opacity: 1,
+    ease: Power4.easeInOut
 });
 
-TweenMax.from(".logo", 1.5, {
+
+TweenMax.from(".logo, #infoicon", 1.5, {
     delay: 3.7,
-    opacity: 0,
     y: -40,
     ease: Power4.easeInOut
 });
-
-TweenMax.from("#infoicon", 1.5, {
+TweenMax.to(".logo, #infoicon", 1.5, {
     delay: 3.7,
-    opacity: 0,
-    y: -40,
+    opacity: 1,
     ease: Power4.easeInOut
 });
 
-TweenMax.from(".info-contact", 2.5, {
+
+TweenMax.from(".info-contact, .zdog-container", 2.5, {
     delay: 3.7,
+    y: 20,
     opacity: 0,
-    y: 40,
-    ease: Power4.easeInOut
+    ease: Power2.easeInOut
+});
+TweenMax.to(".info-contact, .zdog-container", 1.5, {
+    delay: 3.7,
+    opacity: 1,
+    ease: Power2.easeInOut
 });
 
 TweenMax.from(".copyright", 2.5, {
     delay: 3.7,
     opacity: 0,
-    y: 40,
-    ease: Power4.easeInOut
+    ease: Power2.easeInOut
 });
-
-TweenMax.from(".zdog-container", 2.5, {
+TweenMax.to(".copyright", 1.5, {
     delay: 3.7,
-    opacity: 0,
-    x: 40,
-    ease: Power4.easeInOut
+    opacity: 1,
+    ease: Power2.easeInOut
 });
