@@ -136,8 +136,7 @@ header #infoicon:hover {
   position: relative;
   color: white;
 }
-
-#learn span {
+#learn #learn span {
   font-weight: 600;
   font-size: 1em;
   color: white;

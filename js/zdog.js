@@ -12,6 +12,7 @@ const distance = 12;
 let isSpinning = true;
 
 let illo = new Zdog.Illustration({
+  // rotate: { x: -TAU/8 },
   element: '.zdog-canvas',
   dragRotate: true,
 });
@@ -42,12 +43,22 @@ dot.copy({
   translate: { y: distance },
 });
 
-let circle = new Zdog.Ellipse({
+let ring = new Zdog.Ellipse({
   addTo: illo,
   diameter: 300,
   stroke: 10,
-  color: '#C25',
+  color: purple,
 });
+ring.copy({
+  color: blue,
+  diameter: 250,
+  rotate: { x: TAU/6 }
+})
+ring.copy({
+  color: orange,
+  diameter: 200,
+  rotate: { x: TAU/-6 }
+})
 
 function animate() {
   illo.rotate.y += isSpinning ? 0.03 : 0;
