@@ -20,7 +20,7 @@ let illo = new Zdog.Illustration({
 let dot = new Zdog.Shape({
   addTo: illo,
   translate: { y: -distance },
-  stroke: 30,
+  stroke: 20,
   color: orange,
 });
 dot.copy({
@@ -45,18 +45,18 @@ dot.copy({
 
 let ring = new Zdog.Ellipse({
   addTo: illo,
-  diameter: 300,
+  diameter: 200,
   stroke: 10,
   color: purple,
 });
 ring.copy({
   color: blue,
-  diameter: 250,
+  diameter: 200,
   rotate: { x: TAU/6 }
 })
 ring.copy({
   color: orange,
-  diameter: 200,
+  diameter: 150,
   rotate: { x: TAU/-6 }
 })
 

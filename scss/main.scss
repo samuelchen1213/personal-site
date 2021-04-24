@@ -81,6 +81,18 @@ header {
     justify-content: left;
     align-items: center;
     flex-wrap: wrap; }
+
+    .zdog-container {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+
+      .zdog-canvas {
+        position: relative;
+        vertical-align: middle;
+        cursor: grab; 
+      }
+    }
 }
   
 
@@ -144,38 +156,15 @@ header {
     color: white; }
 }
   
-  .zdog-canvas {
-    left: 7%;
-    position: relative;
-    vertical-align: middle;
-    cursor: grab; }
   
-  footer {
-    text-align: right;
-    font-size: 0.2em;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: transparent;
-    color: rgba(255, 255, 255, 0.397);
-    padding-right: 100px;
-    padding-bottom: 20px; }
-  
-  /* Responsive */
-  /*
-  Todo:
-      1. fid a way to have vanta cover the full screen
-      2. better accessibility for buttons
-  */
-  @media only screen and (max-width: 800px) {
-    .content {
-      width: 100%; }
-    .media {
-      padding-top: 15px;
-      position: relative;
-      display: flex;
-      justify-content: space-around;
-      max-width: 100%; }
-    .banner {
-      background-color: #292929; } }
+footer {
+  text-align: right;
+  font-size: 0.2em;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.397);
+  padding-right: 100px;
+  padding-bottom: 20px; }
