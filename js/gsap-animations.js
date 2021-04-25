@@ -97,7 +97,6 @@ TweenMax.to("#item4", 2.5, {
 
 TweenMax.from(".copyright", 2.5, {
     delay: baseDelay + 2.7,
-    y: 20,
     opacity: 0,
     ease: Power2.easeInOut
 });

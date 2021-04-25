@@ -2,8 +2,8 @@
 function changeText(el) {
     let text;
     if (el == 'resume') text = "work experience!";
-    if (el == 'linkedin') text = "work experience, but on linkedin!";
-    if (el == 'notion') text = "reading adventure!";
+    if (el == 'linkedin') text = "mandatory linkedin information.";
+    if (el == 'notion') text = "the books that I am reading!";
     if (el == 'email') text = "uh, nevermind let's just have a chat!";
     document.getElementById("description").innerText = text;
     document.getElementById("description").style.color="orange"
