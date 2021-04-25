@@ -1,3 +1,7 @@
+/* Colors */
+$my-orange: #EE964B;
+
+
 * {
   margin: 0;
   padding: 0;
@@ -61,11 +65,11 @@ header {
     opacity: 0;
     position: relative;
     color: white;
-    transition: 0.2s; }
+    transition: 0.5s; }
   
   #infoicon:hover {
     cursor: pointer;
-    color: orange; }
+    color: $my-orange; }
 }
 
 .banner {
@@ -92,12 +96,14 @@ header {
       .zdog-canvas {
         position: relative;
         vertical-align: middle;
-        cursor: grab; 
+        cursor: move; 
+        cursor: grab;
+        transition: 0.3s;
       }
-    }
 
-    .info-contact {
-      opacity: 0;
+      .zdog-canvas:active {
+        cursor: grabbing;
+      }
     }
 }
   
@@ -106,7 +112,7 @@ header {
     width: 55%;
   
   #intro span {
-    color: #EE964B;
+    color: $my-orange;
     font-size: 1.2em; }
   
   #greeting {
@@ -119,12 +125,14 @@ header {
     font-size: 2em; 
     opacity: 0;}
   
-  p {
+  #information {
+    opacity: 0;
     font-size: 1.2em;
-    color: #d8d8d8;
+    color: rgba(255, 255, 255, 0.767);
     font-weight: 300;
-    padding-top: 20px;
-    padding-bottom: 20px; }
+    padding-top: 10px;
+    padding-bottom: 20px; 
+    }
   
   .contact {
     position: relative;
@@ -132,6 +140,7 @@ header {
     display: block; 
   
     #learn {
+      opacity: 0;
       font-weight: 600;
       font-size: 1em;
       position: relative;
@@ -149,6 +158,10 @@ header {
       display: flex;
       justify-content: space-between;
       max-width: 200px;
+
+      #item1, #item2, #item3, #item4 {
+        opacity: 0;
+      }
     
       a {
           background-color: transparent;
@@ -159,14 +172,13 @@ header {
           transition: 0.5s; }
       
       i:hover {
-          color: orange; }
+          color: $my-orange; }
     }
-  
   }
 }
   
-  
-footer {
+
+.copyright {
   text-align: right;
   font-size: 0.5em;
   position: absolute;
@@ -177,8 +189,5 @@ footer {
   color: rgba(255, 255, 255, 0.397);
   padding-right: 100px;
   padding-bottom: 20px; 
-
-  .copyright {
-    opacity: 0;
-  }
+  opacity: 0;
 }

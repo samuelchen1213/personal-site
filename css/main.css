@@ -1,3 +1,4 @@
+/* Colors */
 * {
   margin: 0;
   padding: 0;
@@ -61,11 +62,11 @@ header #infoicon {
   opacity: 0;
   position: relative;
   color: white;
-  transition: 0.2s;
+  transition: 0.5s;
 }
 header #infoicon:hover {
   cursor: pointer;
-  color: orange;
+  color: #EE964B;
 }
 
 .banner {
@@ -92,10 +93,12 @@ header #infoicon:hover {
 .banner .zdog-container .zdog-canvas {
   position: relative;
   vertical-align: middle;
+  cursor: move;
   cursor: grab;
+  transition: 0.3s;
 }
-.banner .info-contact {
-  opacity: 0;
+.banner .zdog-container .zdog-canvas:active {
+  cursor: grabbing;
 }
 
 .content {
@@ -115,11 +118,12 @@ header #infoicon:hover {
   font-size: 2em;
   opacity: 0;
 }
-.content p {
+.content #information {
+  opacity: 0;
   font-size: 1.2em;
-  color: #d8d8d8;
+  color: rgba(255, 255, 255, 0.767);
   font-weight: 300;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
 .content .contact {
@@ -128,6 +132,7 @@ header #infoicon:hover {
   display: block;
 }
 .content .contact #learn {
+  opacity: 0;
   font-weight: 600;
   font-size: 1em;
   position: relative;
@@ -145,6 +150,9 @@ header #infoicon:hover {
   justify-content: space-between;
   max-width: 200px;
 }
+.content .contact .media #item1, .content .contact .media #item2, .content .contact .media #item3, .content .contact .media #item4 {
+  opacity: 0;
+}
 .content .contact .media a {
   background-color: transparent;
   padding: 0;
@@ -154,10 +162,10 @@ header #infoicon:hover {
   transition: 0.5s;
 }
 .content .contact .media i:hover {
-  color: orange;
+  color: #EE964B;
 }
 
-footer {
+.copyright {
   text-align: right;
   font-size: 0.5em;
   position: absolute;
@@ -168,8 +176,6 @@ footer {
   color: rgba(255, 255, 255, 0.397);
   padding-right: 100px;
   padding-bottom: 20px;
-}
-footer .copyright {
   opacity: 0;
 }
 
