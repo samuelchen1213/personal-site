@@ -6,7 +6,7 @@
 }
 
 #vantaNet {
-  position: absolute;
+  position: relative;
   display: block;
   min-width: 100%;
   min-height: 100%;
@@ -57,14 +57,13 @@ header .logo:hover:after {
   transform-origin: bottom left;
 }
 header #infoicon {
+  padding-top: 5px;
   opacity: 0;
   position: relative;
-  cursor: pointer;
   color: white;
   transition: 0.2s;
 }
 header #infoicon:hover {
-  position: relative;
   cursor: pointer;
   color: orange;
 }
@@ -103,7 +102,7 @@ header #infoicon:hover {
   width: 55%;
 }
 .content #intro span {
-  color: orange;
+  color: #EE964B;
   font-size: 1.2em;
 }
 .content #greeting {
@@ -161,7 +160,7 @@ header #infoicon:hover {
 
 footer {
   text-align: right;
-  font-size: 0.2em;
+  font-size: 0.5em;
   position: absolute;
   left: 0;
   bottom: 0;

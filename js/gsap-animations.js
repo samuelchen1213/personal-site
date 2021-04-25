@@ -29,7 +29,7 @@ TweenMax.from(".info-contact, .zdog-container", 2.5, {
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to(".info-contact, .zdog-container", 1.5, {
+TweenMax.to(".info-contact, .zdog-container", 2.5, {
     delay: 3.7,
     opacity: 1,
     ease: Power2.easeInOut
@@ -40,7 +40,7 @@ TweenMax.from(".copyright", 2.5, {
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to(".copyright", 1.5, {
+TweenMax.to(".copyright", 2.5, {
     delay: 3.7,
     opacity: 1,
     ease: Power2.easeInOut
