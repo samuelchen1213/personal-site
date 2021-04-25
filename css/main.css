@@ -127,35 +127,34 @@ header #infoicon:hover {
   padding-top: 15px;
   display: block;
 }
-.content .media {
+.content .contact #learn {
+  font-weight: 600;
+  font-size: 1em;
+  position: relative;
+  color: white;
+}
+.content .contact #learn #learn span {
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+}
+.content .contact .media {
   padding-top: 15px;
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 35%;
+  max-width: 200px;
 }
-.content .media a {
+.content .contact .media a {
   background-color: transparent;
   padding: 0;
 }
-.content .media i {
+.content .contact .media i {
   color: white;
   transition: 0.5s;
 }
-.content .media i:hover {
+.content .contact .media i:hover {
   color: orange;
-}
-
-#learn {
-  font-weight: 600;
-  font-size: 1em;
-  position: relative;
-  color: white;
-}
-#learn #learn span {
-  font-weight: 600;
-  font-size: 1em;
-  color: white;
 }
 
 footer {

@@ -129,38 +129,40 @@ header {
   .contact {
     position: relative;
     padding-top: 15px;
-    display: block; }
+    display: block; 
   
-  .media {
-    padding-top: 15px;
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    max-width: 35%;
-  
-    a {
-        background-color: transparent;
-        padding: 0; }
+    #learn {
+      font-weight: 600;
+      font-size: 1em;
+      position: relative;
+      color: white; 
     
-    i {
-        color: white;
-        transition: 0.5s; }
-    
-    i:hover {
-        color: orange; }
-  }
-}
-  
-#learn {
-  font-weight: 600;
-  font-size: 1em;
-  position: relative;
-  color: white; 
+      #learn span {
+        font-weight: 600;
+        font-size: 1em;
+        color: white; }
+    }
 
-  #learn span {
-    font-weight: 600;
-    font-size: 1em;
-    color: white; }
+    .media {
+      padding-top: 15px;
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      max-width: 200px;
+    
+      a {
+          background-color: transparent;
+          padding: 0; }
+      
+      i {
+          color: white;
+          transition: 0.5s; }
+      
+      i:hover {
+          color: orange; }
+    }
+  
+  }
 }
   
   
