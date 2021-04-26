@@ -1,166 +1,31 @@
-/* Colors */
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 #vantaNet {
   position: relative;
-  display: block;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
   min-width: 100%;
   min-height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-
-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 100px;
-  z-index: 100000;
-  transition: 0.6s;
-}
-header .logo {
-  opacity: 0;
-  position: relative;
-  font-weight: 700;
-  color: white;
-  text-decoration: none;
-  font-size: 1.3em;
-  letter-spacing: 2px;
-  transition: 0.6s;
-}
-header #infoicon {
-  padding-top: 5px;
-  opacity: 0;
-  position: relative;
-  color: white;
-  transition: 0.5s;
-}
-header #infoicon:hover {
-  cursor: pointer;
-  color: #EE964B;
+  margin: 0;
+  padding: 0;
 }
 
 .banner {
   font-family: "Poppins", sans-serif;
   position: relative;
-  width: 100%;
+  width: 85%;
   min-height: 100vh;
-  padding: 100px;
   display: flex;
   align-items: center;
-}
-.banner .container {
-  position: relative;
-  display: flex;
-  justify-content: left;
-  align-items: center;
-  flex-wrap: wrap;
-}
-.banner .zdog-container {
-  opacity: 0;
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
-}
-.banner .zdog-container .zdog-canvas {
-  position: relative;
-  vertical-align: middle;
-  cursor: move;
-  cursor: grab;
-  transition: 0.3s;
-}
-.banner .zdog-container .zdog-canvas:active {
-  cursor: grabbing;
-}
-
-.content {
-  width: 55%;
-}
-.content #greeting {
-  font-family: "Roboto Mono";
-  color: white;
-  font-size: 5.2em;
-  transform: translateX(-4px);
-}
-.content #intro {
-  color: white;
-  font-size: 2em;
-  opacity: 0;
-}
-.content #intro span {
-  color: #EE964B;
-  font-size: 1.2em;
-}
-.content #information {
-  opacity: 0;
-  font-size: 1em;
-  line-height: 1.5;
-  color: rgba(255, 255, 255, 0.767);
-  font-weight: 300;
-  padding-top: 10px;
-  padding-bottom: 20px;
-}
-.content .contact {
-  font-family: "Roboto Mono";
-  position: relative;
-  padding-top: 15px;
-  display: block;
-}
-.content .contact #learn {
-  opacity: 0;
-  font-weight: 600;
-  font-size: 1em;
-  position: relative;
-  color: white;
-}
-.content .contact #learn #learn span {
-  font-weight: 600;
-  font-size: 1em;
-  color: white;
-}
-.content .contact .media {
-  padding-top: 15px;
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  max-width: 200px;
-}
-.content .contact .media #item1, .content .contact .media #item2, .content .contact .media #item3, .content .contact .media #item4 {
-  opacity: 0;
-}
-.content .contact .media a {
-  background-color: transparent;
-  padding: 0;
-}
-.content .contact .media i {
-  color: white;
-  transition: 0.5s;
-}
-.content .contact .media i:hover {
-  color: #EE964B;
-}
-
-.copyright {
-  text-align: right;
-  font-size: 0.5em;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: transparent;
-  color: rgba(255, 255, 255, 0.397);
-  padding-right: 100px;
-  padding-bottom: 20px;
-  opacity: 0;
 }
 
 /*# sourceMappingURL=main.css.map */
