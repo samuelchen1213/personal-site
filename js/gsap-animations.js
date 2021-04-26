@@ -95,12 +95,12 @@
 // });
 
 
-// TweenMax.from(".copyright", 2.5, {
+// TweenMax.from(".copyright-footer", 2.5, {
 //     delay: baseDelay + 2.7,
 //     opacity: 0,
 //     ease: Power2.easeInOut
 // });
-// TweenMax.to(".copyright", 2.5, {
+// TweenMax.to(".copyright-footer", 2.5, {
 //     delay: baseDelay + 2.7,
 //     opacity: 1,
 //     ease: Power2.easeInOut

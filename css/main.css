@@ -11,8 +11,6 @@
 #vantaNet {
   position: relative;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
@@ -20,12 +18,63 @@
 }
 
 .banner {
+  grid-area: main;
   font-family: "Poppins", sans-serif;
   position: relative;
   width: 85%;
   min-height: 100vh;
+  margin: auto;
+  grid-template-areas: "header" "main" "footer";
+}
+.banner header {
+  grid-area: header;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   display: flex;
-  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  z-index: 100000;
+  transition: 0.6s;
+}
+.banner header .logo {
+  position: relative;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  font-size: 1.3em;
+  letter-spacing: 2px;
+  transition: 0.6s;
+}
+.banner header #infoicon {
+  padding-top: 5px;
+  position: relative;
+  color: white;
+  transition: 0.5s;
+}
+.banner header #infoicon:hover {
+  cursor: pointer;
+  color: #EE964B;
+}
+.banner .container {
+  grid-area: "main";
+  position: relative;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.banner .copyright-footer {
+  grid-area: "footer";
+  position: absolute;
+  text-align: right;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  font-size: 0.5em;
+  padding-bottom: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
