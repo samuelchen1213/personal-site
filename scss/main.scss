@@ -46,21 +46,23 @@ $my-orange: #EE964B;
     transition: 0.6s;
     
     .logo {
-      // opacity: 0; // Gsap Animation
       position: relative;
       font-weight: 700;
       color: white;
       text-decoration: none;
       font-size: 1.3em;
       letter-spacing: 2px;
-      transition: 0.6s; }
+      transition: 0.6s; 
+      opacity: 0; // Gsap
+    }
     
     #infoicon {
       padding-top: 5px;
-      // opacity: 0; // Gsap Animation
       position: relative;
       color: white;
-      transition: 0.5s; }
+      transition: 0.5s; 
+      opacity: 0; // Gsap
+    }
     
     #infoicon:hover {
       cursor: pointer;
@@ -73,7 +75,6 @@ $my-orange: #EE964B;
     position: relative;
     display: flex;
     justify-content: left;
-    // align-items: center; // DESKTOP
     flex-wrap: wrap; 
     
     .content {
@@ -88,7 +89,7 @@ $my-orange: #EE964B;
     #intro {
       color: white;
       font-size: 2em; 
-      //opacity: 0; //GSAP
+      opacity: 0; //GSAP
     
       span {
         color: $my-orange;
@@ -102,7 +103,7 @@ $my-orange: #EE964B;
       font-weight: 300;
       padding-top: 10px;
       padding-bottom: 20px; 
-      //opacity: 0; //GSAP
+      opacity: 0; //GSAP
       }
     
     .contact {
@@ -116,7 +117,7 @@ $my-orange: #EE964B;
         font-size: 1em;
         position: relative;
         color: white; 
-        //opacity: 0; //GSAP
+        opacity: 0; //GSAP
       
         #learn span {
           font-weight: 600;
@@ -131,9 +132,9 @@ $my-orange: #EE964B;
         justify-content: space-between;
         max-width: 200px;
   
-        // #item1, #item2, #item3, #item4 {
-        //   //opacity: 0; //GSAP
-        // }
+        #item1, #item2, #item3, #item4 {
+          opacity: 0; //GSAP
+        }
       
         a {
             background-color: transparent;
@@ -173,7 +174,7 @@ $my-orange: #EE964B;
 
   .copyright-footer {
     grid-area: 'footer';
-    position: absolute; // DESKTOP FIXED
+    position: absolute;
     text-align: center; // DESKTOP RIGHT
     left: 0;
     bottom: 0;
@@ -181,6 +182,34 @@ $my-orange: #EE964B;
     background-color: transparent;
     font-size: 0.5em;
     padding-bottom: 20px;
-    // opacity: 0; // GSAP
+    opacity: 0; // GSAP
   }
+}
+
+
+@media (min-width: 950px) {
+  .banner {
+    grid-area: unset !important;
+    display: flex;
+    align-items: center;
+
+    header {
+      position: absolute;
+    }
+
+    .container {
+      align-items: center;
+
+      .content {
+        width: 55%;
+      }
+    }
+
+    .copyright-footer {
+      text-align: right;
+    }
+  }
+  
+  
+
 }
