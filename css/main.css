@@ -65,10 +65,82 @@
   justify-content: left;
   flex-wrap: wrap;
 }
+.banner .container .content #greeting {
+  font-family: "Roboto Mono";
+  color: white;
+  font-size: 5.2em;
+  transform: translateX(-4px);
+}
+.banner .container .content #intro {
+  color: white;
+  font-size: 2em;
+}
+.banner .container .content #intro span {
+  color: #EE964B;
+  font-size: 1.2em;
+}
+.banner .container .content #information {
+  font-size: 1em;
+  line-height: 1.5;
+  color: rgba(255, 255, 255, 0.767);
+  font-weight: 300;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.banner .container .content .contact {
+  font-family: "Roboto Mono";
+  position: relative;
+  padding-top: 15px;
+  display: block;
+}
+.banner .container .content .contact #learn {
+  font-weight: 600;
+  font-size: 1em;
+  position: relative;
+  color: white;
+}
+.banner .container .content .contact #learn #learn span {
+  font-weight: 600;
+  font-size: 1em;
+  color: white;
+}
+.banner .container .content .contact .media {
+  padding-top: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  max-width: 200px;
+}
+.banner .container .content .contact .media a {
+  background-color: transparent;
+  padding: 0;
+}
+.banner .container .content .contact .media i {
+  color: white;
+  transition: 0.5s;
+}
+.banner .container .content .contact .media i:hover {
+  color: #EE964B;
+}
+.banner .container .zdog-container {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.banner .container .zdog-container .zdog-canvas {
+  position: relative;
+  vertical-align: middle;
+  cursor: move;
+  cursor: grab;
+  transition: 0.3s;
+}
+.banner .container .zdog-container .zdog-canvas:active {
+  cursor: grabbing;
+}
 .banner .copyright-footer {
   grid-area: "footer";
   position: absolute;
-  text-align: right;
+  text-align: center;
   left: 0;
   bottom: 0;
   width: 100%;

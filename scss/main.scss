@@ -75,14 +75,106 @@ $my-orange: #EE964B;
     justify-content: left;
     // align-items: center; // DESKTOP
     flex-wrap: wrap; 
+    
+    .content {
+      //width: 55%; // DESKTOP
+    
+    #greeting {
+      font-family: 'Roboto Mono';
+      color: white;
+      font-size: 5.2em;
+      transform: translateX(-4px); }
+    
+    #intro {
+      color: white;
+      font-size: 2em; 
+      //opacity: 0; //GSAP
+    
+      span {
+        color: $my-orange;
+        font-size: 1.2em; }
+    }
+    
+    #information {
+      font-size: 1em;
+      line-height: 1.5;
+      color: rgba(255, 255, 255, 0.767);
+      font-weight: 300;
+      padding-top: 10px;
+      padding-bottom: 20px; 
+      //opacity: 0; //GSAP
+      }
+    
+    .contact {
+      font-family: 'Roboto Mono';
+      position: relative;
+      padding-top: 15px;
+      display: block; 
+    
+      #learn {
+        font-weight: 600;
+        font-size: 1em;
+        position: relative;
+        color: white; 
+        //opacity: 0; //GSAP
+      
+        #learn span {
+          font-weight: 600;
+          font-size: 1em;
+          color: white; }
+      }
   
+      .media {
+        padding-top: 15px;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        max-width: 200px;
+  
+        // #item1, #item2, #item3, #item4 {
+        //   //opacity: 0; //GSAP
+        // }
+      
+        a {
+            background-color: transparent;
+            padding: 0; }
+        
+        i {
+            color: white;
+            transition: 0.5s; }
+        
+        i:hover {
+            color: $my-orange; }
+      }
+    }
+  }
+
+
+    .zdog-container {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      // opacity: 0; // GSAP
+
+      .zdog-canvas {
+        position: relative;
+        vertical-align: middle;
+        cursor: move; 
+        cursor: grab;
+        transition: 0.3s;
+      }
+
+      .zdog-canvas:active {
+        cursor: grabbing;
+      }
+    }
   }
 
 
   .copyright-footer {
     grid-area: 'footer';
-    position: absolute;
-    text-align: right;
+    position: absolute; // DESKTOP FIXED
+    text-align: center; // DESKTOP RIGHT
     left: 0;
     bottom: 0;
     width: 100%;
