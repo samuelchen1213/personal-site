@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -38,25 +37,6 @@ header .logo {
   letter-spacing: 2px;
   transition: 0.6s;
 }
-header .logo:after {
-  content: "clicking this leads to nowhere";
-  font-weight: 100;
-  font-size: 0.2em;
-  text-align: center;
-  position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 0px;
-  bottom: 0;
-  left: 0;
-  background-color: white;
-  transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
-}
-header .logo:hover:after {
-  transform: scaleX(1);
-  transform-origin: bottom left;
-}
 header #infoicon {
   padding-top: 5px;
   opacity: 0;
@@ -70,6 +50,7 @@ header #infoicon:hover {
 }
 
 .banner {
+  font-family: "Poppins", sans-serif;
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -104,11 +85,8 @@ header #infoicon:hover {
 .content {
   width: 55%;
 }
-.content #intro span {
-  color: #EE964B;
-  font-size: 1.2em;
-}
 .content #greeting {
+  font-family: "Roboto Mono";
   color: white;
   font-size: 5.2em;
   transform: translateX(-4px);
@@ -118,15 +96,21 @@ header #infoicon:hover {
   font-size: 2em;
   opacity: 0;
 }
+.content #intro span {
+  color: #EE964B;
+  font-size: 1.2em;
+}
 .content #information {
   opacity: 0;
-  font-size: 1.2em;
+  font-size: 1em;
+  line-height: 1.5;
   color: rgba(255, 255, 255, 0.767);
   font-weight: 300;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 .content .contact {
+  font-family: "Roboto Mono";
   position: relative;
   padding-top: 15px;
   display: block;
