@@ -78,9 +78,8 @@
   font-size: 2em;
   opacity: 0;
 }
-.banner .container .content #intro span {
+.banner .container .content #intro #name {
   color: #EE964B;
-  font-size: 1.2em;
 }
 .banner .container .content #information {
   font-size: 1em;
@@ -134,6 +133,7 @@
   display: flex;
   flex-grow: 1;
   justify-content: center;
+  opacity: 0;
 }
 .banner .container .zdog-container .zdog-canvas {
   position: relative;
@@ -146,6 +146,7 @@
   cursor: grabbing;
 }
 .banner .copyright-footer {
+  color: rgba(255, 255, 255, 0.329);
   grid-area: "footer";
   position: absolute;
   text-align: center;
@@ -155,11 +156,13 @@
   background-color: transparent;
   font-size: 0.5em;
   padding-bottom: 20px;
+  font-family: "Roboto Mono";
   opacity: 0;
 }
 
 @media (min-width: 950px) {
   .banner {
+    justify-content: center;
     grid-area: unset !important;
     display: flex;
     align-items: center;

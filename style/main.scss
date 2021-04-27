@@ -1,4 +1,5 @@
 $my-orange: #EE964B;
+$myopacity: 0; //for testing
 
 * {
   margin: 0;
@@ -53,7 +54,7 @@ $my-orange: #EE964B;
       font-size: 1.3em;
       letter-spacing: 2px;
       transition: 0.6s; 
-      opacity: 0; // Gsap
+      opacity: $myopacity; // Gsap
     }
     
     #infoicon {
@@ -61,7 +62,7 @@ $my-orange: #EE964B;
       position: relative;
       color: white;
       transition: 0.5s; 
-      opacity: 0; // Gsap
+      opacity: $myopacity; // Gsap
     }
     
     #infoicon:hover {
@@ -78,7 +79,6 @@ $my-orange: #EE964B;
     flex-wrap: wrap; 
     
     .content {
-      //width: 55%; // DESKTOP
     
     #greeting {
       font-family: 'Roboto Mono';
@@ -89,11 +89,10 @@ $my-orange: #EE964B;
     #intro {
       color: white;
       font-size: 2em; 
-      opacity: 0; //GSAP
+      opacity: $myopacity; //GSAP
     
-      span {
-        color: $my-orange;
-        font-size: 1.2em; }
+      #name {
+        color: $my-orange;}
     }
     
     #information {
@@ -103,7 +102,7 @@ $my-orange: #EE964B;
       font-weight: 300;
       padding-top: 10px;
       padding-bottom: 20px; 
-      opacity: 0; //GSAP
+      opacity: $myopacity; //GSAP
       }
     
     .contact {
@@ -117,7 +116,7 @@ $my-orange: #EE964B;
         font-size: 1em;
         position: relative;
         color: white; 
-        opacity: 0; //GSAP
+        opacity: $myopacity; //GSAP
       
         #learn span {
           font-weight: 600;
@@ -133,7 +132,7 @@ $my-orange: #EE964B;
         max-width: 200px;
   
         #item1, #item2, #item3, #item4 {
-          opacity: 0; //GSAP
+          opacity: $myopacity; //GSAP
         }
       
         a {
@@ -155,7 +154,7 @@ $my-orange: #EE964B;
       display: flex;
       flex-grow: 1;
       justify-content: center;
-      // opacity: 0; // GSAP
+      opacity: $myopacity; // GSAP
 
       .zdog-canvas {
         position: relative;
@@ -173,6 +172,7 @@ $my-orange: #EE964B;
 
 
   .copyright-footer {
+    color: rgba(255, 255, 255, 0.329);
     grid-area: 'footer';
     position: absolute;
     text-align: center; // DESKTOP RIGHT
@@ -182,13 +182,15 @@ $my-orange: #EE964B;
     background-color: transparent;
     font-size: 0.5em;
     padding-bottom: 20px;
-    opacity: 0; // GSAP
+    font-family: 'Roboto Mono';
+    opacity: $myopacity; // GSAP
   }
 }
 
 
 @media (min-width: 950px) {
   .banner {
+    justify-content: center;
     grid-area: unset !important;
     display: flex;
     align-items: center;
@@ -209,7 +211,4 @@ $my-orange: #EE964B;
       text-align: right;
     }
   }
-  
-  
-
 }

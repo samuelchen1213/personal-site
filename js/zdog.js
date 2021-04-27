@@ -47,16 +47,14 @@ let ring = new Zdog.Ellipse({
   addTo: illo,
   diameter: 200,
   stroke: 10,
-  color: purple,
+  color: blue,
 });
 ring.copy({
-  color: blue,
   diameter: 200,
   rotate: { x: TAU/6 }
 })
 ring.copy({
-  color: orange,
-  diameter: 150,
+  diameter: 200,
   rotate: { x: TAU/-6 }
 })
 
