@@ -83,7 +83,7 @@ $myopacity: 0; //for testing
     #greeting {
       font-family: 'Roboto Mono';
       color: white;
-      font-size: 5.2em;
+      font-size: 4.8em;
       transform: translateX(-4px); }
     
     #intro {
@@ -141,10 +141,13 @@ $myopacity: 0; //for testing
         
         i {
             color: white;
-            transition: 0.5s; }
-        
-        i:hover {
-            color: $my-orange; }
+            transition: 0.5s; 
+          
+            &:hover {
+              color: $my-orange;
+            }  
+        }
+      
       }
     }
   }
@@ -172,6 +175,7 @@ $myopacity: 0; //for testing
 
 
   .copyright-footer {
+    cursor: default;
     color: rgba(255, 255, 255, 0.329);
     grid-area: 'footer';
     position: absolute;
@@ -184,6 +188,16 @@ $myopacity: 0; //for testing
     padding-bottom: 20px;
     font-family: 'Roboto Mono';
     opacity: $myopacity; // GSAP
+
+    #grit {
+      transition: 0.3s;
+    }
+
+    p:hover {
+      #grit {
+        color: $my-orange;
+      }
+    }
   }
 }
 

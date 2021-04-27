@@ -70,7 +70,7 @@
 .banner .container .content #greeting {
   font-family: "Roboto Mono";
   color: white;
-  font-size: 5.2em;
+  font-size: 4.8em;
   transform: translateX(-4px);
 }
 .banner .container .content #intro {
@@ -146,6 +146,7 @@
   cursor: grabbing;
 }
 .banner .copyright-footer {
+  cursor: default;
   color: rgba(255, 255, 255, 0.329);
   grid-area: "footer";
   position: absolute;
@@ -158,6 +159,12 @@
   padding-bottom: 20px;
   font-family: "Roboto Mono";
   opacity: 0;
+}
+.banner .copyright-footer #grit {
+  transition: 0.3s;
+}
+.banner .copyright-footer p:hover #grit {
+  color: #EE964B;
 }
 
 @media (min-width: 950px) {
