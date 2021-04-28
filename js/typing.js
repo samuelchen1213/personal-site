@@ -18,9 +18,9 @@ $(`document`).ready(function(){
 setTimeout(function greetingAnimation() {
     var typed = new Typed('#typed', {
         strings:[
+            'and I love to learn',
             'and I love to create',
             'and I love to lead',
-            'and I love to learn',
             'and here\'s my site'
         ],
         backSpeed: 30,

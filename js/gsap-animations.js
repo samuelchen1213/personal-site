@@ -1,16 +1,25 @@
 let baseDelay = 2.5;
 
-TweenMax.from("#intro", 2, {
-    delay: baseDelay,
-    y: 30,
-    ease: Power4.easeOut
-});
-TweenMax.to("#intro", 2, {
-    delay: baseDelay,
-    opacity: 1,
-    ease: Power4.easeInOut
-});
+// Removes element from html
+function removeOverlay() {
+    element = document.querySelector("#overlay");
+    element.parentNode.removeChild(element);
+}
 
+tl = gsap.timeline({onComplete: removeOverlay});
+tl.to("#overlay", 2.5, {
+        delay: 1.6,
+        opacity: 0,
+        ease: Power2.easeInOut}, 1)
+    .from('#intro', 2.5, {
+        delay: 1.5, 
+        y: 15, 
+        opacity:0, 
+        ease: Power4.easeOut}, 1)
+    .to('#intro', 2.5, {
+        delay: 1.5, 
+        ease: Power4.easeOut, 
+        opacity: 1}, 1)
 
 TweenMax.from("#information, .zdog-container", 2.5, {
     delay: baseDelay + 1,
