@@ -1,5 +1,5 @@
 $my-orange: #EE964B;
-$myopacity: 0; //for testing
+$myopacity: 0; // For testing
 
 * {
   margin: 0;
@@ -66,7 +66,7 @@ $myopacity: 0; //for testing
       font-size: 1.3em;
       letter-spacing: 2px;
       transition: 0.6s; 
-      opacity: $myopacity; // Gsap
+      opacity: $myopacity; // GSAP
     }
     
     #infoicon {
@@ -74,7 +74,7 @@ $myopacity: 0; //for testing
       position: relative;
       color: white;
       transition: 0.5s; 
-      opacity: $myopacity; // Gsap
+      opacity: $myopacity; // GSAP
     }
     
     #infoicon:hover {
@@ -96,7 +96,7 @@ $myopacity: 0; //for testing
       font-family: 'Roboto Mono';
       color: white;
       font-size: 4.8em;
-      transform: translateX(-4px); }
+      transform: translateX(-3px); }
     
     #intro {
       color: white;

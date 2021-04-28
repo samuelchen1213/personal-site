@@ -28,5 +28,5 @@ setTimeout(function greetingAnimation() {
         smartBackspace: true,
         backDelay: 1000
     })
-}, 7000)
+}, 6400)
 
