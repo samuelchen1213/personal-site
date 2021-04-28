@@ -18,14 +18,13 @@ $(`document`).ready(function(){
 setTimeout(function greetingAnimation() {
     var typed = new Typed('#typed', {
         strings:[
-            'and I love to create.',
-            'and I love to lead.', 
-            'and I love to ideate.',
-            'and I love to learn.',
-            'and here\'s my site.'
+            'and I love to create',
+            'and I love to lead',
+            'and I love to learn',
+            'and here\'s my site'
         ],
-        backSpeed: 40,
-        typeSpeed: 50,
+        backSpeed: 30,
+        typeSpeed: 45,
         smartBackspace: true,
         backDelay: 1000
     })
