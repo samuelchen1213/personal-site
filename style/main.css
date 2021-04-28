@@ -174,7 +174,7 @@
 .banner .copyright-footer #grit {
   transition: 0.3s;
 }
-.banner .copyright-footer p:hover #grit {
+.banner .copyright-footer #grit:hover {
   color: #EE964B;
 }
 

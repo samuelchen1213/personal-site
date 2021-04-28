@@ -201,15 +201,15 @@ $myopacity: 0; //for testing
     font-family: 'Roboto Mono';
     opacity: $myopacity; // GSAP
 
+
     #grit {
       transition: 0.3s;
-    }
 
-    p:hover {
-      #grit {
+      &:hover {
         color: $my-orange;
       }
     }
+
   }
 }
 
