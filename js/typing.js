@@ -23,8 +23,8 @@ setTimeout(function greetingAnimation() {
             'and I love to lead',
             'and here\'s my site'
         ],
-        backSpeed: 30,
-        typeSpeed: 45,
+        backSpeed: 40,
+        typeSpeed: 55,
         smartBackspace: true,
         backDelay: 1000
     })

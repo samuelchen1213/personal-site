@@ -93,12 +93,12 @@ TweenMax.to("#item4", 2.3, {
 
 
 TweenMax.from(".copyright-footer, .logo, #infoicon", 2.5, {
-    delay: baseDelay + 2.2,
+    delay: baseDelay + 1.8,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to(".copyright-footer, .logo, #infoicon", 2.5, {
-    delay: baseDelay + 2.2,
+    delay: baseDelay + 1.8,
     opacity: 1,
     ease: Power2.easeInOut
 });
