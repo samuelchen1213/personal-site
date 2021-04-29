@@ -144,25 +144,20 @@ $myopacity: 0; // For testing
           transition: 0.5s;
         }
 
-        // &:hover > div{
-        //   opacity: 0.6 !important;
-        // }
-        // & div:hover {
-        //   opacity: 1 !important;
-        // }
-
+        div {
+          transition: 0.5s; 
+          &:hover  i{
+            color: $my-orange;
+          }  
+        }
       
         a {
             background-color: transparent;
-            padding: 0; }
+            padding: 0; 
+          }
         
         i {
             color: white;
-            transition: 0.5s; 
-          
-            &:hover {
-              color: $my-orange;
-            }  
         }
       
       }

@@ -129,16 +129,18 @@
   opacity: 0;
   transition: 0.5s;
 }
+.banner .container .content .contact .media div {
+  transition: 0.5s;
+}
+.banner .container .content .contact .media div:hover i {
+  color: #EE964B;
+}
 .banner .container .content .contact .media a {
   background-color: transparent;
   padding: 0;
 }
 .banner .container .content .contact .media i {
   color: white;
-  transition: 0.5s;
-}
-.banner .container .content .contact .media i:hover {
-  color: #EE964B;
 }
 .banner .container .zdog-container {
   display: flex;

@@ -4,7 +4,7 @@ let myorange = '#EE964B';
 function iconHover(el) {
     // Description change
     let text;
-    if (el == '#item1') text = "work experience!";
+    if (el == '#item1') text = "work experience! (Resumé)";
     if (el == '#item2') text = "the books that I am reading!";
     if (el == '#item3') text = "mandatory linkedin information.";
     if (el == '#item4') text = "code and projects!";
@@ -22,7 +22,6 @@ function iconHover(el) {
 
     document.getElementById("description").innerText = text;
     document.getElementById("description").style.color= myorange;
-    // document.getElementById("description").style.transition = "all 1s"
 
 
     // Icon opacity change effect
@@ -32,7 +31,7 @@ function iconHover(el) {
     }
 }
 
-function changeOriginal(el) {
+function iconHoverOff(el) {
     TweenMax.from("#description", 0.5, {
         opacity: 1,
         ease: Power2.easeInOut

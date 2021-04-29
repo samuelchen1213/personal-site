@@ -23,13 +23,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Are you snooping through my code? -->
     <div id="vantaNet"> 
         <div id="overlay"></div>
         <section class="banner" id="sec">
             <header>
-                <a class="logo">samuel chen.</a>
-                <i class="fas fa-info-circle" id="infoicon" onclick="deleteVanta()"></i>
+                <a class="logo" onclick="deleteVanta()">samuel chen.</a>
+                <i class="fas fa-info-circle" id="infoicon"></i>
             </header>
             <div class="container">
                 <div class="content">
@@ -46,27 +45,27 @@
                     <div class="contact">
                         <h2 id="learn">Learn more about my&nbsp<span id="description"></span></h2>
                         <div class="media">
-                            <div class="items" id="item1" onmouseover="iconHover('#item1')" onmouseout="changeOriginal('#item1')">
+                            <div class="items" id="item1" onmouseover="iconHover('#item1')" onmouseout="iconHoverOff('#item1')">
                                 <a href="./assets/Resume (Samuel Chen).pdf" target="_blank">
                                     <i class="far fa-user-circle"></i>
                                 </a>
                             </div>
-                            <div class="items" id="item2" onmouseover="iconHover('#item2')" onmouseout="changeOriginal('#item2')">
+                            <div class="items" id="item2" onmouseover="iconHover('#item2')" onmouseout="iconHoverOff('#item2')">
                                 <a href="https://www.notion.so/samuelchen1213/Samuel-s-Library-be48e7582aed4f25b3ba58c109950cc3" target="_blank">
                                     <i class="fas fa-book"></i>
                                 </a>
                             </div>
-                            <div class="items" id="item3" onmouseover="iconHover('#item3')" onmouseout="changeOriginal('#item3')">
+                            <div class="items" id="item3" onmouseover="iconHover('#item3')" onmouseout="iconHoverOff('#item3')">
                                 <a href="">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </div>
-                            <div class="items" id="item4" onmouseover="iconHover('#item4')" onmouseout="changeOriginal('#item4')">
+                            <div class="items" id="item4" onmouseover="iconHover('#item4')" onmouseout="iconHoverOff('#item4')">
                                 <a href="">
                                     <i class="fab fa-github"></i>
                                 </a>
                             </div>
-                            <div class="items" id="item5" onmouseover="iconHover('#item5')" onmouseout="changeOriginal('#item5')">
+                            <div class="items" id="item5" onmouseover="iconHover('#item5')" onmouseout="iconHoverOff('#item5')">
                                 <a href="mailto:samuelchen1213@gmail.com">
                                     <i class="fas fa-envelope"></i>
                                 </a>
@@ -86,9 +85,9 @@
     
     <script src="./js/zdog.js"></script>
     <script src="./js/vanta-settings.js"></script>
-    <script src="./js/text-transform.js"></script>
+    <script src="./js/media-effects.js"></script>
     <script src="./js/gsap-animations.js"></script>
-    <script src="js/typing.js"></script>
+    <script src="js/greeting.js"></script>
     <script></script>
 </body>
 </html>
