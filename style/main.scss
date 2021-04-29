@@ -13,7 +13,6 @@ $myopacity: 0; // For testing
 
 #vantaNet {
   position: relative;
-  overflow: hidden;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
@@ -33,20 +32,16 @@ $myopacity: 0; // For testing
 
 
 .banner {
-  grid-area: main;
   font-family: 'Poppins', sans-serif; 
   position: relative;
   width: 85%;
   min-height: 100vh;
   margin: auto;
-  grid-template-areas:
-    'header'
-    'main'
-    'footer';
+  display: flex;
+  flex-flow: column;
   
   
   header {
-    grid-area: header;
     position: relative;
     top: 0;
     left: 0;
@@ -54,7 +49,7 @@ $myopacity: 0; // For testing
     display: flex;
     justify-content: space-between;
     padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 25px;
     z-index: 100000;
     transition: 0.6s;
     
@@ -73,18 +68,19 @@ $myopacity: 0; // For testing
       padding-top: 5px;
       position: relative;
       color: white;
-      transition: 0.5s; 
+      transition: 0.3s; 
       opacity: $myopacity; // GSAP
+      font-size: 1.2em !important;
+
+      &:hover {
+        cursor: pointer;
+        color: $my-orange; 
+      }
     }
-    
-    #infoicon:hover {
-      cursor: pointer;
-      color: $my-orange; }
   }
 
 
   .container {
-    grid-area: 'main';
     position: relative;
     display: flex;
     justify-content: left;
@@ -141,11 +137,21 @@ $myopacity: 0; // For testing
         position: relative;
         display: flex;
         justify-content: space-between;
-        max-width: 200px;
+        max-width: 230px;
   
-        #item1, #item2, #item3, #item4 {
+        #item1, #item2, #item3, #item4, #item5 {
+          font-size: 1.8em !important;
           opacity: $myopacity; //GSAP
+          transition: 0.5s;
         }
+
+        // &:hover > div{
+        //   opacity: 0.6 !important;
+        // }
+        // & div:hover {
+        //   opacity: 1 !important;
+        // }
+
       
         a {
             background-color: transparent;
@@ -190,7 +196,7 @@ $myopacity: 0; // For testing
     cursor: default;
     color: rgba(255, 255, 255, 0.329);
     grid-area: 'footer';
-    position: absolute;
+    position: relative;
     text-align: center; // DESKTOP RIGHT
     left: 0;
     bottom: 0;
@@ -198,6 +204,7 @@ $myopacity: 0; // For testing
     background-color: transparent;
     font-size: 0.5em;
     padding-bottom: 20px;
+    padding-top: 40px;
     font-family: 'Roboto Mono';
     opacity: $myopacity; // GSAP
 
@@ -216,17 +223,9 @@ $myopacity: 0; // For testing
 
 @media (min-width: 950px) {
   .banner {
-    justify-content: center;
-    grid-area: unset !important;
-    display: flex;
-    align-items: center;
-
-    header {
-      position: absolute;
-    }
-
     .container {
       align-items: center;
+      flex: 1;
 
       .content {
         width: 55%;

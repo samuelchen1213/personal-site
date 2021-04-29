@@ -24,12 +24,12 @@
 </head>
 <body>
     <!-- Are you snooping through my code? -->
-    <div id="vantaNet">
+    <div id="vantaNet"> 
         <div id="overlay"></div>
         <section class="banner" id="sec">
             <header>
                 <a class="logo">samuel chen.</a>
-                <i class="fas fa-info-circle fa-lg" id="infoicon"></i>
+                <i class="fas fa-info-circle" id="infoicon" onclick="deleteVanta()"></i>
             </header>
             <div class="container">
                 <div class="content">
@@ -48,22 +48,27 @@
                         <div class="media">
                             <div class="items" id="item1" onmouseover="changeText('resume')" onmouseout="changeOriginal()">
                                 <a href="./assets/Resume (Samuel Chen).pdf" target="_blank">
-                                    <i class="far fa-user-circle fa-2x"></i>
+                                    <i class="far fa-user-circle"></i>
                                 </a>
                             </div>
                             <div class="items" id="item2" onmouseover="changeText('notion')" onmouseout="changeOriginal()">
                                 <a href="https://www.notion.so/samuelchen1213/Samuel-s-Library-be48e7582aed4f25b3ba58c109950cc3" target="_blank">
-                                    <i class="fas fa-book fa-2x"></i>
+                                    <i class="fas fa-book"></i>
                                 </a>
                             </div>
                             <div class="items" id="item3" onmouseover="changeText('linkedin')" onmouseout="changeOriginal()">
                                 <a href="">
-                                    <i class="fab fa-linkedin fa-2x"></i>
+                                    <i class="fab fa-linkedin"></i>
                                 </a>
                             </div>
                             <div class="items" id="item4" onmouseover="changeText('email')" onmouseout="changeOriginal()">
                                 <a href="mailto:samuelchen1213@gmail.com">
-                                    <i class="fas fa-envelope fa-2x"></i>
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </div>
+                            <div class="items" id="item5" onmouseover="changeText('github')" onmouseout="changeOriginal()">
+                                <a href="">
+                                    <i class="fab fa-github"></i>
                                 </a>
                             </div>
                         </div>
@@ -77,7 +82,7 @@
                 <p>&#169 Samuel Chen. Created with 100% <span id='grit'>grit.</span></p>
             </footer>
         </section>
-    </div>   
+    </div> 
     
     <script src="./js/zdog.js"></script>
     <script src="./js/vanta-settings.js"></script>

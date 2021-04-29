@@ -7,6 +7,7 @@ function changeText(el) {
     if (el == 'linkedin') text = "mandatory linkedin information.";
     if (el == 'notion') text = "the books that I am reading!";
     if (el == 'email') text = "uh, nevermind let's just have a chat!";
+    if (el == 'github') text = "code and projects!";
     
     
     TweenMax.from("#description", 0.5, {
@@ -39,4 +40,15 @@ function changeOriginal() {
         opacity: 0,
         ease: Power2.easeInOut
     });
+}
+
+// Temporary
+function deleteVanta() {
+    TweenMax.to("#overlay", 1, {
+        opacity: 1,
+        ease: Power2.easeInOut
+    });
+    setTimeout(function() {
+        $(".vanta-canvas").remove();
+    }, 1000)
 }

@@ -10,7 +10,6 @@
 
 #vantaNet {
   position: relative;
-  overflow: hidden;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
@@ -29,16 +28,15 @@
 }
 
 .banner {
-  grid-area: main;
   font-family: "Poppins", sans-serif;
   position: relative;
   width: 85%;
   min-height: 100vh;
   margin: auto;
-  grid-template-areas: "header" "main" "footer";
+  display: flex;
+  flex-flow: column;
 }
 .banner header {
-  grid-area: header;
   position: relative;
   top: 0;
   left: 0;
@@ -46,7 +44,7 @@
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   z-index: 100000;
   transition: 0.6s;
 }
@@ -64,15 +62,15 @@
   padding-top: 5px;
   position: relative;
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
   opacity: 0;
+  font-size: 1.2em !important;
 }
 .banner header #infoicon:hover {
   cursor: pointer;
   color: #EE964B;
 }
 .banner .container {
-  grid-area: "main";
   position: relative;
   display: flex;
   justify-content: left;
@@ -124,10 +122,12 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 200px;
+  max-width: 230px;
 }
-.banner .container .content .contact .media #item1, .banner .container .content .contact .media #item2, .banner .container .content .contact .media #item3, .banner .container .content .contact .media #item4 {
+.banner .container .content .contact .media #item1, .banner .container .content .contact .media #item2, .banner .container .content .contact .media #item3, .banner .container .content .contact .media #item4, .banner .container .content .contact .media #item5 {
+  font-size: 1.8em !important;
   opacity: 0;
+  transition: 0.5s;
 }
 .banner .container .content .contact .media a {
   background-color: transparent;
@@ -160,7 +160,7 @@
   cursor: default;
   color: rgba(255, 255, 255, 0.329);
   grid-area: "footer";
-  position: absolute;
+  position: relative;
   text-align: center;
   left: 0;
   bottom: 0;
@@ -168,6 +168,7 @@
   background-color: transparent;
   font-size: 0.5em;
   padding-bottom: 20px;
+  padding-top: 40px;
   font-family: "Roboto Mono";
   opacity: 0;
 }
@@ -179,17 +180,9 @@
 }
 
 @media (min-width: 950px) {
-  .banner {
-    justify-content: center;
-    grid-area: unset !important;
-    display: flex;
-    align-items: center;
-  }
-  .banner header {
-    position: absolute;
-  }
   .banner .container {
     align-items: center;
+    flex: 1;
   }
   .banner .container .content {
     width: 55%;
