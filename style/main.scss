@@ -87,17 +87,16 @@ $myopacity: 0; // For testing
     flex-wrap: wrap; 
     
     .content {
-    
-    #greeting {
-      font-family: 'Roboto Mono';
-      color: white;
-      font-size: 4.8em;
-      transform: translateX(-3px); }
-    
-    #intro {
-      color: white;
-      font-size: 2em; 
-      opacity: $myopacity; //GSAP
+      #greeting {
+        font-family: 'Roboto Mono';
+        color: white;
+        font-size: 4.8em;
+        transform: translateX(-3px); }
+      
+      #intro {
+        color: white;
+        font-size: 2em; 
+        opacity: $myopacity; //GSAP
     
       #name {
         color: $my-orange;}
