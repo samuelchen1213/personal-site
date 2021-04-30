@@ -176,9 +176,12 @@
 }
 .banner .copyright-footer #grit {
   transition: 0.3s;
+  color: inherit;
+  text-decoration: none;
 }
 .banner .copyright-footer #grit:hover {
   color: #EE964B;
+  cursor: pointer;
 }
 
 @media (min-width: 1200px) {

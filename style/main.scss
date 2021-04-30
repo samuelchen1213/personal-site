@@ -208,9 +208,12 @@ $myopacity: 0; // For testing
 
     #grit {
       transition: 0.3s;
+      color: inherit;
+      text-decoration: none;
 
       &:hover {
         color: $my-orange;
+        cursor: pointer;
       }
     }
 
