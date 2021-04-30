@@ -147,9 +147,9 @@
   flex-grow: 1;
   justify-content: center;
   opacity: 0;
+  position: relative;
 }
 .banner .container .zdog-container .zdog-canvas {
-  position: relative;
   vertical-align: middle;
   cursor: move;
   cursor: grab;
@@ -181,7 +181,7 @@
   color: #EE964B;
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1200px) {
   .banner .container {
     align-items: center;
     flex: 1;

@@ -4,7 +4,7 @@ let myorange = '#EE964B';
 function iconHover(el) {
     // Description change
     let text;
-    if (el == '#item1') text = "work experience! (Resumé)";
+    if (el == '#item1') text = "work experience!";
     if (el == '#item2') text = "the books that I am reading!";
     if (el == '#item3') text = "mandatory linkedin information.";
     if (el == '#item4') text = "code and projects!";
@@ -58,6 +58,8 @@ function iconHoverOff(el) {
 
 // Temporary
 function deleteVanta() {
+    $(`#overlay`).css('background-color', '#15203C');
+    
     TweenMax.to("#overlay", 1, {
         opacity: 1,
         ease: Power2.easeInOut
