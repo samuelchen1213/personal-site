@@ -1,12 +1,8 @@
 
 // Color Palette
 const TAU = Zdog.TAU;
-const orange = 'orange';
-const purple = '#2D2072';
-const blue = '#115ADD';
-const lblue = '#C2EDFF';
-const limewhite = '#E9F3DB'
-
+const orange = '#EE964B';
+const blue = '#0d43da';
 const distance = 12;
 
 let isSpinning = true;
@@ -90,7 +86,7 @@ let neck = new Zdog.Ellipse({
   diameter: 10,
   stroke: 5,
   fill: true,
-  color: "blue",
+  color: blue,
   translate: {y: -15, z: 3},
   rotate: {x: TAU/5}
 });
@@ -137,7 +133,7 @@ let elbow = new Zdog.Ellipse({
   diameter: 7,
   stroke: 4,
   fill: true,
-  color: "blue",
+  color: blue,
   translate: {x: -11 ,y: -4, z: 9},
   rotate: {y: TAU/10,}
 });
@@ -173,7 +169,7 @@ let hip = new Zdog.RoundedRect({
   width: 25,
   stroke: 5,
   fill: true,
-  color: "blue",
+  color: blue,
   cornerRadius: 4,
   translate: {y: 17, z: 5},
   rotate: {x: TAU/3}
