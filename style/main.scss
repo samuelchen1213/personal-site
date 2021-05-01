@@ -52,36 +52,91 @@ $myopacity: 0; // For testing
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 40px;
     padding-bottom: 25px;
     z-index: 100000;
     transition: 0.6s;
+    overflow: visible;
+    height: 35px;
     
     .logo {
+      margin: 0;
+      padding: 0;
+      width: 45px;
+      height: 42px;
       position: relative;
-      font-weight: 700;
-      color: white;
-      text-decoration: none;
-      font-size: 1.3em;
-      letter-spacing: 2px;
       transition: 0.6s; 
       opacity: $myopacity; // GSAP
     }
     
-
-
-
-    #infoicon {
-      padding-top: 5px;
-      position: relative;
-      color: white;
-      transition: 0.3s; 
+    .header-right {
       opacity: $myopacity; // GSAP
-      font-size: 1.2em !important;
+      display: flex;
+      justify-content: space-between;
+      width: 120px;
 
-      &:hover {
-        cursor: pointer;
-        color: $my-orange; 
+      .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        box-sizing: border-box;
+        
+        .checkbox {
+          opacity: 0;
+          position: absolute;
+      
+          &:checked + .label .ball {
+            transform: translateX(28px)
+          }
+        }
+      
+        
+        .label {
+          background-color: #111;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          border-radius: 50px;
+          position: relative;
+          padding: 5px;
+          height: 22px;
+          width: 50px;
+        }
+        
+        .ball {
+          background-color: #fff;
+          border-radius: 50%;
+          position: absolute;
+          height: 22px;
+          width: 22px;
+          transition: transform 0.2s linear;
+          cursor: pointer;
+        }
+        
+        .fa-water {
+          color: white;
+          padding-right: 2px;
+        }
+        
+        .fa-cog {
+          color: white;
+          padding-left: 2px;
+        }
+      }
+  
+      #infoicon {
+        padding-top: 5px;
+        position: relative;
+        color: white;
+        transition: 0.3s; 
+        font-size: 1.4em !important;
+  
+        &:hover {
+          cursor: pointer;
+          color: $my-orange; 
+        }
       }
     }
   }
@@ -246,3 +301,6 @@ $myopacity: 0; // For testing
     }
   }
 }
+
+
+

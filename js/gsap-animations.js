@@ -29,11 +29,11 @@ tl.to("#overlay", 2.5, {
         delay: 1.5, 
         ease: Power4.easeOut, 
         opacity: 1}, 1)
-    .from(".copyright-footer, .logo, #infoicon", 2, {
+    .from(".copyright-footer, .logo, .header-right", 2, {
         delay: - 1.5,
         opacity: 0,
         ease: Power2.easeInOut})
-    .to(".copyright-footer, .logo, #infoicon", 2, {
+    .to(".copyright-footer, .logo, .header-right", 2, {
         delay: - 1.5,
         opacity: 1,
         ease: Power2.easeInOut
