@@ -13,10 +13,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script
-    src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-    crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 
     <!-- Icons -->
@@ -31,66 +27,71 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <div id="vantaNet"> 
-        <div id="overlay"></div>
-        <section class="banner" id="sec">
-            <header>
-                <a class="logo" onclick="deleteVanta()">samuel chen.</a>
-                <i class="fas fa-info-circle" id="infoicon"></i>
-            </header>
-            <div class="container">
-                <div class="content">
-                    <h2 id="greeting"><span id="greeting-typed"></span></h2>  
-                    <h2 id="intro">I'm&nbsp<span id="name">Samuel Chen</span> <span id="typed"></span></h2>        
-                    <div id="information">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi aliquam cupiditate officia optio perferendis quis temporibus, quae eius nam tempora amet omnis dolore nostrum repellat reiciendis? Totam omnis sapiente eius.
-                        </p>
-                    </div>
-            
-                    <div class="contact">
-                        <h2 id="learn">Learn more about my&nbsp<span id="description"></span></h2>
-                        <div class="media">
-                            <div class="items" id="item1" onmouseover="iconHover('#item1')" onmouseout="iconHoverOff('#item1')">
-                                <a href="./assets/Resume (Samuel Chen).pdf" target="_blank">
-                                    <i class="far fa-user-circle"></i>
-                                </a>
-                            </div>
-                            <div class="items" id="item2" onmouseover="iconHover('#item2')" onmouseout="iconHoverOff('#item2')">
-                                <a href="https://www.notion.so/samuelchen1213/Samuel-s-Library-be48e7582aed4f25b3ba58c109950cc3" target="_blank">
-                                    <i class="fas fa-book"></i>
-                                </a>
-                            </div>
-                            <div class="items" id="item3" onmouseover="iconHover('#item3')" onmouseout="iconHoverOff('#item3')">
-                                <a href="">
-                                    <i class="fab fa-linkedin"></i>
-                                </a>
-                            </div>
-                            <div class="items" id="item4" onmouseover="iconHover('#item4')" onmouseout="iconHoverOff('#item4')">
-                                <a href="">
-                                    <i class="fab fa-github"></i>
-                                </a>
-                            </div>
-                            <div class="items" id="item5" onmouseover="iconHover('#item5')" onmouseout="iconHoverOff('#item5')">
-                                <a href="mailto:samuelchen1213@gmail.com">
-                                    <i class="fas fa-envelope"></i>
-                                </a>
-                            </div>
+    <div id="vantaNet"></div>
+    <div id="overlay"></div>
+    <section class="banner" id="sec">
+        <header>
+            <a class="logo" onclick="deleteVanta()">samuel chen.</a>
+            <i class="fas fa-info-circle" id="infoicon"></i>
+        </header>
+        <div class="container">
+            <div class="content">
+                <h2 id="greeting"><span id="greeting-typed"></span></h2>  
+                <h2 id="intro">I'm&nbsp<span id="name">Samuel Chen</span> <span id="typed"></span></h2>        
+                <div id="information">
+                    <p>I am currently at Ryerson University as a Coop Business Management student. 
+                        In my spare time I like to work out, read, code, watch films, and practice the violin.
+                        I not only have a strong passion for learning technical skills, but also discovering the unique
+                        experiences as well. I believe learning and gaining a wider perspective of the world
+                        can generate virtuous character and actions.
+                    </p>
+                    <br>
+                    <p><strong>Currently @ Philip Morris International (Customer Journey Intern)</strong></p>
+                    <p>learning how to create and manage consumer experiences in a project based environment.</p>
+                    <br>
+                    <p>Looking for 2021 Summer Opportunities!</p>
+                </div>
+        
+                <div class="contact">
+                    <h2 id="learn">Learn more about my&nbsp<span id="description"></span></h2>
+                    <div class="media">
+                        <div class="items" id="item1" onmouseover="iconHover('#item1')" onmouseout="iconHoverOff('#item1')">
+                            <a href="./assets/Resume (Samuel Chen).pdf" target="_blank">
+                                <i class="far fa-user-circle"></i>
+                            </a>
+                        </div>
+                        <div class="items" id="item2" onmouseover="iconHover('#item2')" onmouseout="iconHoverOff('#item2')">
+                            <a href="https://www.notion.so/samuelchen1213/Samuel-s-Library-be48e7582aed4f25b3ba58c109950cc3" target="_blank">
+                                <i class="fas fa-book"></i>
+                            </a>
+                        </div>
+                        <div class="items" id="item3" onmouseover="iconHover('#item3')" onmouseout="iconHoverOff('#item3')">
+                            <a href="https://github.com/samuelchen1213" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                        </div>
+                        <div class="items" id="item4" onmouseover="iconHover('#item4')" onmouseout="iconHoverOff('#item4')">
+                            <a href="https://github.com/samuelchen1213">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                        <div class="items" id="item5" onmouseover="iconHover('#item5')" onmouseout="iconHoverOff('#item5')">
+                            <a href="mailto:samuelchen1213@gmail.com">
+                                <i class="fas fa-envelope"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="zdog-container">
-                    <canvas class="zdog-canvas" width="400" height="550"></canvas>
-                </div>
             </div>
-            <footer class="copyright-footer">
-                <p>&#169 Samuel Chen. Created with 100% <a id='grit' href="https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?language=en#t-113496"target="_blank">grit.</a></p>
-            </footer>
-        </section>
-    </div> 
-    
+            <div class="zdog-container">
+                <canvas class="zdog-canvas" width="350" height="550"></canvas>
+            </div>
+        </div>
+        <footer class="copyright-footer">
+            <p>&#169 Samuel Chen. Created with 100% <a id='grit' href="https://www.ted.com/talks/angela_lee_duckworth_grit_the_power_of_passion_and_perseverance?language=en#t-113496"target="_blank">grit.</a></p>
+        </footer>
+    </section>
+    <!-- </div>  -->
     <script src="./js/zdog.js"></script>
     <script src="./js/vanta-settings.js"></script>
     <script src="./js/media-effects.js"></script>

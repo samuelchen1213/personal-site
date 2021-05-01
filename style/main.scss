@@ -13,11 +13,14 @@ $myopacity: 0; // For testing
 }
 
 #vantaNet {
-  position: relative;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1000;
 }
 
 #overlay {
@@ -119,7 +122,6 @@ $myopacity: 0; // For testing
     .contact {
       font-family: 'Roboto Mono';
       position: relative;
-      padding-top: 15px;
       display: block; 
     
       #learn {
@@ -175,6 +177,7 @@ $myopacity: 0; // For testing
       justify-content: center;
       opacity: $myopacity; // GSAP
       position: relative;
+      padding-top: 20px;
 
       .zdog-canvas {
         vertical-align: middle;
@@ -224,12 +227,17 @@ $myopacity: 0; // For testing
 
 @media (min-width: 1200px) {
   .banner {
+
     .container {
       align-items: center;
       flex: 1;
 
       .content {
         width: 55%;
+      }
+
+      .zdog-container {
+        padding: 0;
       }
     }
 

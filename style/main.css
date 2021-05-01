@@ -9,11 +9,14 @@
 }
 
 #vantaNet {
-  position: relative;
+  position: fixed;
   min-width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1000;
 }
 
 #overlay {
@@ -102,7 +105,6 @@
 .banner .container .content .contact {
   font-family: "Roboto Mono";
   position: relative;
-  padding-top: 15px;
   display: block;
 }
 .banner .container .content .contact #learn {
@@ -148,6 +150,7 @@
   justify-content: center;
   opacity: 0;
   position: relative;
+  padding-top: 20px;
 }
 .banner .container .zdog-container .zdog-canvas {
   vertical-align: middle;
@@ -191,6 +194,9 @@
   }
   .banner .container .content {
     width: 55%;
+  }
+  .banner .container .zdog-container {
+    padding: 0;
   }
   .banner .copyright-footer {
     text-align: right;

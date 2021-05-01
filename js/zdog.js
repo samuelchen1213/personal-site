@@ -171,7 +171,7 @@ let hip = new Zdog.RoundedRect({
   fill: true,
   color: blue,
   cornerRadius: 4,
-  translate: {y: 17, z: 5},
+  translate: {y: 15, z: 4},
   rotate: {x: TAU/3}
 })
 
@@ -190,7 +190,7 @@ let leg = new Zdog.Shape({
   addTo: lowerhip,
   stroke: 16,
   path: [
-    { x: -7, y: 0, z: -5 }, 
+    { x: -8, y: 0, z: -5 }, 
     { x: -10, y: 10, z: -6}, 
   ],
   color: "white",
@@ -222,7 +222,7 @@ let leg2 = new Zdog.Shape({
   addTo: lowerhip,
   stroke: 16,
   path: [
-    { x: 7, y: 0, z: -5 }, 
+    { x: 8, y: 0, z: -5 }, 
     { x: 10, y: 10, z: -6}, 
   ],
   color: "white",
