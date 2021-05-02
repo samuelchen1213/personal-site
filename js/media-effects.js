@@ -31,6 +31,7 @@ function iconHover(el) {
     }
 }
 
+// Animations for hovering off media buttons
 function iconHoverOff(el) {
     TweenMax.from("#description", 0.5, {
         opacity: 1,
@@ -57,7 +58,8 @@ function iconHoverOff(el) {
 }
 
 
-// Delete and injecting vantaNet for user's performance
+// Deletes and injects vantaNet for user's performance
+// Logic for toggle
 let el;
 const checkbox = document.getElementById('checkbox');
 checkbox.addEventListener('change', () => {
@@ -83,7 +85,7 @@ checkbox.addEventListener('change', () => {
 })
 
 
-// Disabled button submition for a while
+// Disables toggle 1100 milliseconds
 // Prevents bug where vantaNet is banished forever 
 let enableSubmit = function(ele) {
     $(ele).removeAttr("disabled");
