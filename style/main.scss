@@ -10,6 +10,7 @@ $myopacity: 0; // For testing
   font-size: 100%;
   vertical-align: baseline;
   background: transparent;
+  overflow-x: hidden;
 }
 
 #vantaNet {
@@ -201,7 +202,7 @@ $myopacity: 0; // For testing
         max-width: 300px;
   
         .resume-button {
-          transform: translateY(-1px);
+          transform: translateY(-5px);
           text-align: center;
           font-family: 'Roboto Mono';
           cursor: pointer;
