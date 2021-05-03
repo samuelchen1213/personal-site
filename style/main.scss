@@ -197,17 +197,34 @@ $myopacity: 0; // For testing
         position: relative;
         display: flex;
         justify-content: space-between;
-        max-width: 230px;
+        align-items: center;
+        max-width: 300px;
   
+        .resume-button {
+          transform: translateY(-1px);
+          text-align: center;
+          font-family: 'Roboto Mono';
+          cursor: pointer;
+          font-size: 15px;
+          border-radius: 4px;
+          background-color:$my-orange;
+          color: white;
+          border: none;
+          padding: 8px;
+          width: 100px;
+          transition: all 0.5s;
+        }
+
         #item1, #item2, #item3, #item4, #item5 {
           font-size: 1.8em !important;
           opacity: $myopacity; //GSAP
           transition: 0.5s;
         }
 
+
         div {
           transition: 0.5s; 
-          &:hover  i{
+          &:hover  i {
             color: $my-orange;
           }  
         }
@@ -279,29 +296,6 @@ $myopacity: 0; // For testing
   }
 }
 
-
-@media (min-width: 1200px) {
-  .banner {
-
-    .container {
-      align-items: center;
-      flex: 1;
-
-      .content {
-        width: 55%;
-      }
-
-      .zdog-container {
-        padding: 0;
-      }
-    }
-
-    .copyright-footer {
-      text-align: right;
-    }
-  }
-}
-
 .modal {
   display: none;
   position: fixed;
@@ -321,7 +315,7 @@ $myopacity: 0; // For testing
     margin: 15% auto;
     padding: 30px;
     border: 1px solid #888;
-    width: 80%;
+    width: 80%; // desktop 65%
     border-radius: 0.5em;
 
     .modal-header {
@@ -365,6 +359,31 @@ $myopacity: 0; // For testing
   }
 }
 
+@media (min-width: 1200px) {
+  .modal-content {
+    background-color: red;
+    width: 65% !important;
+  }
+  
+  .banner {
+    .container {
+      align-items: center;
+      flex: 1;
+
+      .content {
+        width: 55%;
+      }
+
+      .zdog-container {
+        padding: 0;
+      }
+    }
+
+    .copyright-footer {
+      text-align: right;
+    }
+  }
+}
 
 
 

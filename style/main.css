@@ -173,7 +173,22 @@
   position: relative;
   display: flex;
   justify-content: space-between;
-  max-width: 230px;
+  align-items: center;
+  max-width: 300px;
+}
+.banner .container .content .contact .media .resume-button {
+  transform: translateY(-1px);
+  text-align: center;
+  font-family: "Roboto Mono";
+  cursor: pointer;
+  font-size: 15px;
+  border-radius: 4px;
+  background-color: #EE964B;
+  color: white;
+  border: none;
+  padding: 8px;
+  width: 100px;
+  transition: all 0.5s;
 }
 .banner .container .content .contact .media #item1, .banner .container .content .contact .media #item2, .banner .container .content .contact .media #item3, .banner .container .content .contact .media #item4, .banner .container .content .contact .media #item5 {
   font-size: 1.8em !important;
@@ -236,21 +251,6 @@
   cursor: pointer;
 }
 
-@media (min-width: 1200px) {
-  .banner .container {
-    align-items: center;
-    flex: 1;
-  }
-  .banner .container .content {
-    width: 55%;
-  }
-  .banner .container .zdog-container {
-    padding: 0;
-  }
-  .banner .copyright-footer {
-    text-align: right;
-  }
-}
 .modal {
   display: none;
   position: fixed;
@@ -304,6 +304,27 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+
+@media (min-width: 1200px) {
+  .modal-content {
+    background-color: red;
+    width: 65% !important;
+  }
+
+  .banner .container {
+    align-items: center;
+    flex: 1;
+  }
+  .banner .container .content {
+    width: 55%;
+  }
+  .banner .container .zdog-container {
+    padding: 0;
+  }
+  .banner .copyright-footer {
+    text-align: right;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
