@@ -5,7 +5,7 @@ function iconHover(el) {
     // Description change
     let text;
     if (el == '#item1') text = "work experience!";
-    if (el == '#item2') text = "the books that I am reading!";
+    if (el == '#item2') text = "reading list, quotes, and notes!";
     if (el == '#item3') text = "mandatory linkedin information.";
     if (el == '#item4') text = "code and projects!";
     if (el == '#item5') text = "uh, nevermind let's just have a chat!";

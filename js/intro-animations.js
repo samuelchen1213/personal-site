@@ -57,7 +57,7 @@ let baseDelay = 2.5;
 
 TweenMax.from("#information, .zdog-container", 2.5, {
     delay: baseDelay + 1,
-    y: 20,
+    // y: 20,
     opacity: 0,
     ease: Power2.easeInOut
 });
