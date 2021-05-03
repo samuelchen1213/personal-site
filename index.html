@@ -13,8 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
     <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
@@ -27,6 +27,21 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-header">
+                <h2>About my website:</h2>
+            </div>
+            <p>This website was built entirely from scratch by me using HTML5, CSS3, Javascript (that's right, no boostrap). 
+                I also implemented several Javascript libraries such as Jquery for state handling, GSAP for animations, Vanta.JS for the WebGL background, and Zdog.JS for the pseudo 3D model.
+                I utilized Git for version control and Trello was utilized for project management.
+            </p>
+            <br>
+            <p>I plan to iterate on this projecr to continually make it unique and enjoyable to traverse. 
+                If you would like to follow my progress, please take a look at my <a href="https://github.com/samuelchen1213/personal-site" target="_blank">Github</a> or <a href="https://trello.com/b/HvdkpEzs/samuels-portfolio-site" target="_blank">Trello</a>!</p>
+        </div>
+    </div>
     <div id="vantaNet"></div>
     <div id="overlay"></div>
     <section class="banner" id="sec">

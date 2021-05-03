@@ -27,7 +27,7 @@ function iconHover(el) {
     // Icon opacity change effect
     let elarr = $(".media").children().not(el);
     for (let i = 0; i < elarr.length; ++i) {
-        elarr[i].style.opacity = 0.5;
+        elarr[i].style.opacity = 0.6;
     }
 }
 
@@ -66,8 +66,8 @@ checkbox.addEventListener('change', () => {
     if ($(`.vanta-canvas`).length) {
         $(`#overlay`).css('background-color', '#15203C');
         TweenMax.to("#overlay", 1, {
-        opacity: 1,
-        ease: Power2.easeInOut
+            opacity: 1,
+            ease: Power2.easeInOut
         });
         
         setTimeout(function() {
@@ -76,8 +76,8 @@ checkbox.addEventListener('change', () => {
         }, 1000)
     } else {
         TweenMax.to("#overlay", 1, {
-        opacity: 0,
-        ease: Power2.easeInOut
+            opacity: 0,
+            ease: Power2.easeInOut
         });
         
         $('#vantaNet').append(el)
@@ -96,3 +96,23 @@ $("#checkbox").click(function() {
     $(this).attr("disabled", true);
     setTimeout(function() { enableSubmit(that) }, 1100);
 });
+
+
+// Modal
+var modal = document.getElementById("myModal");
+var btn = document.getElementById("infoicon");
+var span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

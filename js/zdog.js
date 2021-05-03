@@ -11,7 +11,7 @@ const illo = new Zdog.Illustration({
   // set canvas with selector
   element: '.zdog-canvas',
   dragRotate: true,
-  rotate: { y: -TAU/8 ,x:TAU/20}
+  rotate: { y: -TAU/8 ,x:TAU/15}
 });
 
 // Space stuff
@@ -347,7 +347,7 @@ let keyboard = new Zdog.Box({
 });
 
 function animate() {
-  illo.rotate.y += isSpinning ? 0.005 : 0;
+  illo.rotate.y += isSpinning ? 0.003 : 0;
   illo.updateRenderGraph();
   requestAnimationFrame( animate );
 }
