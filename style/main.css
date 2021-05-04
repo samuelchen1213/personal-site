@@ -96,6 +96,8 @@ body {
   font-weight: 300;
   padding-top: 10px;
   padding-bottom: 20px;
+}
+.banner .container .content #information #p1, .banner .container .content #information #p2, .banner .container .content #information #p3 {
   opacity: 0;
 }
 .banner .container .content .contact {

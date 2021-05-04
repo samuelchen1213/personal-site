@@ -110,7 +110,10 @@ body {
       font-weight: 300;
       padding-top: 10px;
       padding-bottom: 20px; 
-      opacity: $myopacity; //GSAP
+      
+      #p1, #p2, #p3 {
+        opacity: $myopacity; //GSAP
+      }
       }
     
     .contact {
