@@ -57,7 +57,6 @@ let baseDelay = 2.5;
 
 TweenMax.from("#information, .zdog-container", 2.5, {
     delay: baseDelay + 1,
-    // y: 20,
     opacity: 0,
     ease: Power2.easeInOut
 });
@@ -69,7 +68,6 @@ TweenMax.to("#information, .zdog-container", 2.5, {
 
 TweenMax.from("#learn", 3, {
     delay: baseDelay + 1.5,
-    // y: 20,
     opacity: 0,
     ease: Power2.easeInOut
 });
