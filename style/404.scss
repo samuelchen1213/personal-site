@@ -1,0 +1,62 @@
+body {
+	height: 100%;
+	background-color: rgb(18, 21, 32);
+}
+
+#fourofour {
+    top: 0;
+    left: 0;
+    height: 100%;
+	width: 100%;
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    h2 {
+        color: white;
+        font-family: "Roboto Mono";
+        font-size: 5em;
+        margin: none;
+        margin-bottom: 5px;
+        margin-top: 0;
+        z-index: -1;
+    }
+}
+
+a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-family: "Roboto Mono";
+    
+    display: inline-block;
+    padding: 8px 5px;
+    position: relative;
+    z-index: 1000;
+
+    &:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 2px;
+        left: 50%;
+        position: absolute;
+        background: #fff;
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+        width: 0;
+      }
+    
+    &:hover:after { 
+        width: 100%; 
+        left: 0; 
+    }
+}
+  
+
+
+
