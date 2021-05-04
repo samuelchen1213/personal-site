@@ -57,47 +57,6 @@ function iconHoverOff(el) {
     }
 }
 
-
-// Deletes and injects vantaNet for user's performance
-// Logic for toggle
-let el;
-const checkbox = document.getElementById('checkbox');
-checkbox.addEventListener('change', () => {
-    if ($(`.vanta-canvas`).length) {
-        $(`#overlay`).css('background-color', '#15203C');
-        TweenMax.to("#overlay", 1, {
-            opacity: 1,
-            ease: Power2.easeInOut
-        });
-        
-        setTimeout(function() {
-            el = $(".vanta-canvas").detach();
-            console.log(el)
-        }, 1000)
-    } else {
-        TweenMax.to("#overlay", 1, {
-            opacity: 0,
-            ease: Power2.easeInOut
-        });
-        
-        $('#vantaNet').append(el)
-    }
-})
-
-
-// Disables toggle 1100 milliseconds
-// Prevents bug where vantaNet is banished forever 
-let enableSubmit = function(ele) {
-    $(ele).removeAttr("disabled");
-}
-
-$("#checkbox").click(function() {
-    var that = this;
-    $(this).attr("disabled", true);
-    setTimeout(function() { enableSubmit(that) }, 1100);
-});
-
-
 // Modal
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("infoicon");
