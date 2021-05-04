@@ -62,16 +62,32 @@ var modal = document.getElementById("myModal");
 var btn = document.getElementById("infoicon");
 var span = document.getElementsByClassName("close")[0];
 
+function removeModal() {
+    modal.style.display = "none";
+}
+
 btn.onclick = function() {
     modal.style.display = "block";
+    TweenMax.to(".modal", 0.5, {
+        opacity: 1,
+        ease: Power2.easeInOut
+    })
 }
 
 span.onclick = function() {
-    modal.style.display = "none";
+    TweenMax.to(".modal", 0.5, {
+        opacity: 0,
+        ease: Power2.easeInOut
+    })
+    setTimeout(removeModal, 500);
 }
 
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    TweenMax.to(".modal", 0.5, {
+        opacity: 0,
+        ease: Power2.easeInOut
+    })
+    setTimeout(removeModal, 500);
   }
 }

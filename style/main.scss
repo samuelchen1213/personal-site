@@ -251,6 +251,7 @@ body {
   overflow: auto; 
   background-color: rgba(0,0,0,0.6);
   justify-content: center;
+  opacity: $myopacity; // GSAP
 
   .modal-content {
     background-color: #fefefe;
@@ -301,7 +302,7 @@ body {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .modal-content {
     background-color: red;
     width: 65% !important;
@@ -326,8 +327,5 @@ body {
     }
   }
 }
-
-
-
 
 
