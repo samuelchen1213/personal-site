@@ -14,20 +14,8 @@ $myopacity: 0; // For testing
 }
 
 body {
-  background-color: $my-blue;
-}
-
-#overlay {
   background-color: rgb(18, 21, 32);
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  top: 0;
-  left: 0;
 }
-
 
 .banner {
   font-family: 'Poppins', sans-serif; 
@@ -327,5 +315,3 @@ body {
     }
   }
 }
-
-

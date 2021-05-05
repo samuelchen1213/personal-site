@@ -347,7 +347,7 @@ let keyboard = new Zdog.Box({
 });
 
 function animate() {
-  illo.rotate.y += isSpinning ? 0.003 : 0;
+  illo.rotate.y += isSpinning ? 0.002 : 0;
   illo.updateRenderGraph();
   requestAnimationFrame( animate );
 }

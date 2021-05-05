@@ -30,9 +30,9 @@ function greetingAnimation() {
 }
 
 tl = gsap.timeline({onComplete: greetingAnimation});
-tl.to("#overlay", 2.5, {
+tl.to("body", 2.5, {
         delay: 1,
-        opacity: 0,
+        backgroundColor: '#15203C',
         ease: Power2.easeInOut}, 1)
     .from('#intro', 2.5, {
         delay: 0.6, 
@@ -104,52 +104,52 @@ TweenMax.to("#learn", 3, {
 })
 
 
-TweenMax.from("#item1", 1.5, {
+TweenMax.from("#item1", 1, {
     delay: baseDelay + 1.5,
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to("#item1", 1.5, {
+TweenMax.to("#item1", 1, {
     delay: baseDelay + 1.5,
     opacity: 1,
     ease: Power2.easeInOut
 })
-TweenMax.from("#item2", 1.5, {
+TweenMax.from("#item2", 1, {
     delay: baseDelay + 1.7,
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to("#item2", 1.5, {
+TweenMax.to("#item2", 1, {
     delay: baseDelay + 1.7,
     opacity: 1,
     ease: Power2.easeInOut
 });
-TweenMax.from("#item3", 1.5, {
+TweenMax.from("#item3", 1, {
     delay: baseDelay + 1.9,
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to("#item3", 1.5, {
+TweenMax.to("#item3", 1, {
     delay: baseDelay + 1.9,
     opacity: 1,
     ease: Power2.easeInOut
 });
-TweenMax.from("#item4", 1.5, {
+TweenMax.from("#item4", 1, {
     delay: baseDelay + 2.1,
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to("#item4", 1.5, {
+TweenMax.to("#item4", 1, {
     delay: baseDelay + 2.1,
     opacity: 1,
     ease: Power2.easeInOut
 });
-TweenMax.from("#item5", 1.5, {
+TweenMax.from("#item5", 1, {
     delay: baseDelay + 2.3,
     opacity: 0,
     ease: Power2.easeInOut
 });
-TweenMax.to("#item5", 1.5, {
+TweenMax.to("#item5", 1, {
     delay: baseDelay + 2.3,
     opacity: 1,
     ease: Power2.easeInOut
