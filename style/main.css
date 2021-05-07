@@ -113,6 +113,7 @@ body {
   justify-content: space-between;
   align-items: center;
   max-width: 300px;
+  overflow: hidden;
 }
 .banner .container .content .contact .media .resume-button {
   position: relative;
@@ -123,6 +124,8 @@ body {
   outline-offset: 4px;
   transition: filter 250ms;
   overflow: visible;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .banner .container .content .contact .media .resume-button .shadow {
   position: absolute;
@@ -188,10 +191,7 @@ body {
   transition: 0.5s;
   overflow: visible;
 }
-.banner .container .content .contact .media div {
-  transition: 0.5s;
-}
-.banner .container .content .contact .media div:hover i {
+.banner .container .content .contact .media #item1:hover i, .banner .container .content .contact .media #item2:hover i, .banner .container .content .contact .media #item3:hover i, .banner .container .content .contact .media #item4:hover i, .banner .container .content .contact .media #item5:hover i {
   color: #EE964B;
 }
 .banner .container .content .contact .media a {
@@ -285,8 +285,30 @@ body {
 }
 .modal .modal-content a {
   text-decoration: none;
-  color: #15203C;
+  color: #113dac;
   font-weight: 500;
+  transform: translateY(6px);
+}
+.modal .modal-content .hover-underline-animation {
+  display: inline-block;
+  position: relative;
+  color: #113dac;
+}
+.modal .modal-content .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #113dac;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+.modal .modal-content .hover-underline-animation:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 .modal .close {
   color: #aaa;

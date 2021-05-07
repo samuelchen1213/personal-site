@@ -129,6 +129,7 @@ body {
         justify-content: space-between;
         align-items: center;
         max-width: 300px;
+        overflow: hidden;
 
         .resume-button {
           position: relative;
@@ -139,6 +140,8 @@ body {
           outline-offset: 4px;
           transition: filter 250ms;
           overflow: visible;
+          user-select: none;
+          -webkit-tap-highlight-color: transparent;
 
           .shadow {
             position: absolute;
@@ -224,10 +227,6 @@ body {
           opacity: $myopacity; //GSAP
           transition: 0.5s;
           overflow: visible;
-        }
-
-        div {
-          transition: 0.5s; 
           &:hover  i {
             color: $my-orange;
           }  
@@ -254,7 +253,6 @@ body {
       opacity: $myopacity; // GSAP
       position: relative;
       padding-top: 20px;
-      // pointer-events: none; // Desktop: remove
 
       .zdog-canvas {
         vertical-align: middle;
@@ -345,8 +343,33 @@ body {
 
     a {
       text-decoration: none;
-      color: $my-blue;
+      color: #113dac;
       font-weight: 500;
+      transform: translateY(6px);
+    }
+
+    .hover-underline-animation {
+      display: inline-block;
+      position: relative;
+      color: #113dac;
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #113dac;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      
+      &:hover:after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
     }
   }
 
@@ -396,3 +419,4 @@ body {
     pointer-events: none;
   }
 }
+
