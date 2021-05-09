@@ -84,7 +84,7 @@ body {
       
       #intro {
         color: white;
-        font-size: 2em; 
+        font-size: 2em;
         opacity: $myopacity; //GSAP
     
       #name {
@@ -92,7 +92,7 @@ body {
     }
     
     #information {
-      font-size: 1em;
+      font-size: 1;
       line-height: 1.5;
       color: rgba(255, 255, 255, 0.767);
       font-weight: 300;
@@ -271,7 +271,6 @@ body {
   .copyright-footer {
     cursor: default;
     color: rgba(255, 255, 255, 0.329);
-    grid-area: 'footer';
     position: relative;
     text-align: center; // DESKTOP RIGHT
     left: 0;
@@ -279,6 +278,7 @@ body {
     width: 100%;
     background-color: transparent;
     font-size: 0.5em;
+    padding-top: 40px;
     padding-bottom: 20px;
     font-family: 'Roboto Mono';
     opacity: $myopacity; // GSAP
@@ -372,6 +372,9 @@ body {
   }
   
   .banner {
+    header {
+      padding-bottom: 0;
+    }
     .container {
       align-items: center;
       flex: 1;
@@ -388,6 +391,7 @@ body {
 
     .copyright-footer {
       text-align: right;
+      padding-top: 0;
     }
   }
 }

@@ -79,7 +79,7 @@ body {
   color: #EE964B;
 }
 .banner .container .content #information {
-  font-size: 1em;
+  font-size: 1;
   line-height: 1.5;
   color: rgba(255, 255, 255, 0.767);
   font-weight: 300;
@@ -221,7 +221,6 @@ body {
 .banner .copyright-footer {
   cursor: default;
   color: rgba(255, 255, 255, 0.329);
-  grid-area: "footer";
   position: relative;
   text-align: center;
   left: 0;
@@ -229,8 +228,8 @@ body {
   width: 100%;
   background-color: transparent;
   font-size: 0.5em;
-  padding-bottom: 20px;
   padding-top: 40px;
+  padding-bottom: 20px;
   font-family: "Roboto Mono";
   opacity: 0;
 }
@@ -308,6 +307,9 @@ body {
     width: 65% !important;
   }
 
+  .banner header {
+    padding-bottom: 0;
+  }
   .banner .container {
     align-items: center;
     flex: 1;
@@ -321,6 +323,7 @@ body {
   }
   .banner .copyright-footer {
     text-align: right;
+    padding-top: 0;
   }
 }
 @media (max-width: 800px) {
