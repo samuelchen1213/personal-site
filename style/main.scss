@@ -225,20 +225,24 @@ body {
         #item1, #item2, #item3, #item4, #item5 {
           font-size: 1.8em !important;
           opacity: $myopacity; //GSAP
-          transition: 0.5s;
           overflow: visible;
-          &:hover  i {
-            color: $my-orange;
-          }  
+          transition: 0.5s;
         }
       
         a {
             background-color: transparent;
             padding: 0; 
+            overflow: visible;
           }
         
         i {
-            color: white;
+          color: white;
+          transition: 0.5s;
+          overflow: visible;
+
+          &:hover {
+            color: $my-orange;
+          }
         }
       
       }

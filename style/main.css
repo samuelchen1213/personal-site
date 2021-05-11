@@ -188,18 +188,21 @@ body {
 .banner .container .content .contact .media #item1, .banner .container .content .contact .media #item2, .banner .container .content .contact .media #item3, .banner .container .content .contact .media #item4, .banner .container .content .contact .media #item5 {
   font-size: 1.8em !important;
   opacity: 0;
-  transition: 0.5s;
   overflow: visible;
-}
-.banner .container .content .contact .media #item1:hover i, .banner .container .content .contact .media #item2:hover i, .banner .container .content .contact .media #item3:hover i, .banner .container .content .contact .media #item4:hover i, .banner .container .content .contact .media #item5:hover i {
-  color: #EE964B;
+  transition: 0.5s;
 }
 .banner .container .content .contact .media a {
   background-color: transparent;
   padding: 0;
+  overflow: visible;
 }
 .banner .container .content .contact .media i {
   color: white;
+  transition: 0.5s;
+  overflow: visible;
+}
+.banner .container .content .contact .media i:hover {
+  color: #EE964B;
 }
 .banner .container .zdog-container {
   display: flex;
