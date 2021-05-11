@@ -151,7 +151,7 @@ body {
 .banner .container .content .contact .media .resume-button .front {
   font-family: "Roboto Mono";
   text-transform: uppercase;
-  letter-spacing: 0.2rem;
+  letter-spacing: 0.15rem;
   display: block;
   position: relative;
   padding: 10px 20px;
@@ -191,6 +191,9 @@ body {
   overflow: visible;
   transition: 0.5s;
 }
+.banner .container .content .contact .media #item1:hover i, .banner .container .content .contact .media #item2:hover i, .banner .container .content .contact .media #item3:hover i, .banner .container .content .contact .media #item4:hover i, .banner .container .content .contact .media #item5:hover i {
+  color: #EE964B;
+}
 .banner .container .content .contact .media a {
   background-color: transparent;
   padding: 0;
@@ -200,9 +203,6 @@ body {
   color: white;
   transition: 0.5s;
   overflow: visible;
-}
-.banner .container .content .contact .media i:hover {
-  color: #EE964B;
 }
 .banner .container .zdog-container {
   display: flex;

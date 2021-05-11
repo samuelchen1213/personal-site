@@ -176,7 +176,7 @@ body {
           .front {
             font-family: "Roboto Mono";
             text-transform: uppercase;
-            letter-spacing: 0.2rem;
+            letter-spacing: 0.15rem;
             display: block;
             position: relative;
             padding: 10px 20px;
@@ -227,6 +227,10 @@ body {
           opacity: $myopacity; //GSAP
           overflow: visible;
           transition: 0.5s;
+
+          &:hover i {
+            color: $my-orange;
+          }
         }
       
         a {
@@ -239,10 +243,6 @@ body {
           color: white;
           transition: 0.5s;
           overflow: visible;
-
-          &:hover {
-            color: $my-orange;
-          }
         }
       
       }
