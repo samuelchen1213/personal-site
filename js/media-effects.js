@@ -1,6 +1,6 @@
 let myorange = '#EE964B';
 
-// Hover over icons effect
+// iconHover takes in a string of the div ID and changes the description accordingly
 function iconHover(el) {
     // Description change
     let text;
@@ -31,7 +31,7 @@ function iconHover(el) {
     }
 }
 
-// Animations for hovering off media buttons
+// iconHoverOff reverts description and opacity
 function iconHoverOff(el) {
     TweenMax.from("#description", 0.5, {
         opacity: 1,
@@ -57,7 +57,10 @@ function iconHoverOff(el) {
     }
 }
 
-// Modal
+
+
+
+//  -- Modal --
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("infoicon");
 var span = document.getElementsByClassName("close")[0];
@@ -66,6 +69,7 @@ function removeModal() {
     modal.style.display = "none";
 }
 
+// Display the modal
 btn.onclick = function() {
     modal.style.display = "block";
     TweenMax.to(".modal", 0.5, {
@@ -74,6 +78,7 @@ btn.onclick = function() {
     })
 }
 
+// Remove modal when clicling X
 span.onclick = function() {
     TweenMax.to(".modal", 0.5, {
         opacity: 0,
@@ -82,6 +87,7 @@ span.onclick = function() {
     setTimeout(removeModal, 500);
 }
 
+// Remove modal when clicling outside
 window.onclick = function(event) {
   if (event.target == modal) {
     TweenMax.to(".modal", 0.5, {
