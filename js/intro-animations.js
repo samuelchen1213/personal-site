@@ -28,7 +28,7 @@ function greetingAnimation() {
         })
     }, 300)
 
-    $(".overlay").remove();
+    $("overlay").remove();
 }
 
 tl = gsap.timeline({onComplete: greetingAnimation});
