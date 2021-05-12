@@ -56,7 +56,6 @@ body {
   opacity: 0;
 }
 .banner header #infoicon:hover {
-  cursor: pointer;
   color: #EE964B;
 }
 .banner .container {
@@ -121,7 +120,6 @@ body {
   border: none;
   background: transparent;
   padding: 0;
-  cursor: pointer;
   outline-offset: 4px;
   transition: filter 250ms;
   overflow: visible;
@@ -215,12 +213,7 @@ body {
 }
 .banner .container .zdog-container .zdog-canvas {
   vertical-align: middle;
-  cursor: move;
-  cursor: grab;
   transition: 0.3s;
-}
-.banner .container .zdog-container .zdog-canvas:active {
-  cursor: grabbing;
 }
 .banner .copyright-footer {
   cursor: default;
@@ -244,7 +237,6 @@ body {
 }
 .banner .copyright-footer #grit:hover {
   color: #EE964B;
-  cursor: pointer;
 }
 
 .modal {
@@ -303,7 +295,6 @@ body {
 .modal .close:hover, .modal .close:focus {
   color: black;
   text-decoration: none;
-  cursor: pointer;
 }
 
 @media (min-width: 1100px) {
@@ -365,7 +356,7 @@ body {
   right: 0;
   bottom: 0;
   border-radius: var(--radius);
-  border: 2px solid #b55400;
+  border: 2px solid var(--color);
   opacity: var(--scale);
   -webkit-transform: scale(var(--scale));
   transform: scale(var(--scale));

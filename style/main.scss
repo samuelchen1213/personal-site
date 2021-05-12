@@ -63,7 +63,7 @@ body {
       opacity: $myopacity; // GSAP
 
       &:hover {
-        cursor: pointer;
+        // cursor: pointer;
         color: $my-orange; 
       }
     }
@@ -137,7 +137,7 @@ body {
           border: none;
           background: transparent;
           padding: 0;
-          cursor: pointer;
+          // cursor: pointer;
           outline-offset: 4px;
           transition: filter 250ms;
           overflow: visible;
@@ -261,14 +261,14 @@ body {
 
       .zdog-canvas {
         vertical-align: middle;
-        cursor: move; 
-        cursor: grab;
+        // cursor: move; 
+        // cursor: grab;
         transition: 0.3s;
       }
 
-      .zdog-canvas:active {
-        cursor: grabbing;
-      }
+      // .zdog-canvas:active {
+      //   cursor: grabbing;
+      // }
     }
   }
 
@@ -296,7 +296,7 @@ body {
 
       &:hover {
         color: $my-orange;
-        cursor: pointer;
+        // cursor: pointer;
       }
     }
 
@@ -366,7 +366,7 @@ body {
     &:focus {
       color: black;
       text-decoration: none;
-      cursor: pointer;
+      // cursor: pointer;
     }
   }
 }
@@ -407,6 +407,9 @@ body {
   }
 }
 
+
+
+
 .cursor {
   display: none;
   position: fixed;
@@ -438,7 +441,7 @@ body {
   right: 0;
   bottom: 0;
   border-radius: var(--radius);
-  border: 2px solid #b55400;
+  border: 2px solid var(--color);
   opacity: var(--scale);
   -webkit-transform: scale(var(--scale));
           transform: scale(var(--scale));
