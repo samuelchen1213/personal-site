@@ -4,18 +4,24 @@ var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
 
-document.addEventListener('mousemove', function(e){
-  var x = e.clientX;
-  var y = e.clientY;
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
-});
+// $(document).ready(function() {
+//     var x = instanceOfMouseEvent.clientX;
+//     var y = instanceOfMouseEvent.clientY;
+//     cursorinner.style.left = x + 'px';
+//     cursorinner.style.top = y + 'px';
+//     cursor.style.left = x + "px";
+//     cursor.style.top = y + "px";
+// });
+    
+
 
 document.addEventListener('mousemove', function(e){
   var x = e.clientX;
   var y = e.clientY;
   cursorinner.style.left = x + 'px';
   cursorinner.style.top = y + 'px';
+  cursor.style.left = x + "px";
+  cursor.style.top = y + "px";
 });
 
 document.addEventListener('mousedown', function(){
