@@ -28,7 +28,7 @@ document.addEventListener('mouseup', function(){
   cursorinner.classList.remove('cursorinnerhover')
 });
 
-a.forEach(item => {
+document.querySelectorAll('a, button, i, .close').forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');
     cursorinner.classList.add('inner-hover')
@@ -38,3 +38,12 @@ a.forEach(item => {
     cursorinner.classList.remove('inner-hover')
   });
 })
+
+$(function() {
+    $('.modal-content').hover(function() {
+      $('.cursor2').css('background-color', '#1f1f1f');
+    }, function() {
+      // on mouseout, reset the background colour
+      $('.cursor2').css('background-color', '');
+    });
+  });

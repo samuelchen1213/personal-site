@@ -266,9 +266,6 @@ body {
   width: 80%;
   border-radius: 0.5em;
 }
-.modal .modal-content:hover .cursor2 {
-  background-color: rgba(0, 0, 0, 0.644) !important;
-}
 .modal .modal-content .modal-header {
   font-family: "Roboto Mono";
   padding-bottom: 15px;
