@@ -27,6 +27,8 @@ function greetingAnimation() {
             backDelay: 1500
         })
     }, 300)
+
+    $(".overlay").remove();
 }
 
 tl = gsap.timeline({onComplete: greetingAnimation});
@@ -152,6 +154,27 @@ TweenMax.from("#item5", 1, {
 TweenMax.to("#item5", 1, {
     delay: baseDelay + 2.3,
     opacity: 1,
+    ease: Power2.easeInOut
+});
+
+TweenMax.from(".cursor", 1, {
+    delay: baseDelay,
+    opacity: 0,
+    ease: Power2.easeInOut
+});
+TweenMax.to(".cursor", 1, {
+    delay: baseDelay,
+    opacity: 1,
+    ease: Power2.easeInOut
+});
+TweenMax.from(".cursor2", 1, {
+    delay: 1,
+    opacity: 0,
+    ease: Power2.easeInOut
+});
+TweenMax.to(".cursor2", 1, {
+    delay: 1,
+    opacity: 0.6,
     ease: Power2.easeInOut
 });
 
