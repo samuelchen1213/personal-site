@@ -20,8 +20,10 @@ document.addEventListener('mousemove', function(e){
   var y = e.clientY;
   cursorinner.style.left = x + 'px';
   cursorinner.style.top = y + 'px';
-  cursor.style.left = x + "px";
-  cursor.style.top = y + "px";
+  TweenMax.to(cursor, .5, {
+    x: e.pageX,
+    y: e.pageY
+  })
 });
 
 document.addEventListener('mousedown', function(){
@@ -36,11 +38,19 @@ document.addEventListener('mouseup', function(){
 
 document.querySelectorAll('a, button, i, .close').forEach(item => {
   item.addEventListener('mouseover', () => {
-    cursor.classList.add('hover');
+    TweenMax.to(".cursor", .2, {css: {
+      border: "3.5px solid #EE964B",
+      width: "50px",
+      height: "50px",
+    }})
     cursorinner.classList.add('inner-hover')
   });
   item.addEventListener('mouseleave', () => {
-    cursor.classList.remove('hover');
+    TweenMax.to(".cursor", .2, {css: {
+      width: "40px",
+      height: "40px",
+      border: "2px solid #cc2255"
+    }})
     cursorinner.classList.remove('inner-hover')
   });
 })
