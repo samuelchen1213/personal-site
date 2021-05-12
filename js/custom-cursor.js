@@ -1,3 +1,5 @@
+// Credit to https://codepen.io/nickforthewin/pen/QWLzVjY
+
 var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
@@ -29,8 +31,10 @@ document.addEventListener('mouseup', function(){
 a.forEach(item => {
   item.addEventListener('mouseover', () => {
     cursor.classList.add('hover');
+    cursorinner.classList.add('inner-hover')
   });
   item.addEventListener('mouseleave', () => {
     cursor.classList.remove('hover');
+    cursorinner.classList.remove('inner-hover')
   });
 })
