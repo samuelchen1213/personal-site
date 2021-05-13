@@ -81,6 +81,21 @@ document.querySelectorAll('a, button, i, .close').forEach(item => {
   });
 })
 
+document.querySelectorAll('.zdog-canvas').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    TweenMax.to(".cursor, .follower", .1, {css: {
+      opacity: 0
+    }})
+    cursorinner.classList.add('inner-hover')
+  });
+  item.addEventListener('mouseleave', () => {
+    TweenMax.to(".cursor, .follower", .1, {css: {
+      opacity: 1
+    }})
+    cursorinner.classList.remove('inner-hover')
+  });
+})
+
 
 // Change text to "new tab" for buttons and anchors
 document.querySelectorAll('a, button').forEach(item => {

@@ -265,14 +265,14 @@ body {
 
       .zdog-canvas {
         vertical-align: middle;
-        // cursor: move; 
-        // cursor: grab;
+        cursor: move; 
+        cursor: grab;
         transition: 0.3s;
       }
 
-      // .zdog-canvas:active {
-      //   cursor: grabbing;
-      // }
+      .zdog-canvas:active {
+        cursor: grabbing;
+      }
     }
   }
 

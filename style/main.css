@@ -217,7 +217,12 @@ body {
 }
 .banner .container .zdog-container .zdog-canvas {
   vertical-align: middle;
+  cursor: move;
+  cursor: grab;
   transition: 0.3s;
+}
+.banner .container .zdog-container .zdog-canvas:active {
+  cursor: grabbing;
 }
 .banner .copyright-footer {
   cursor: default;
