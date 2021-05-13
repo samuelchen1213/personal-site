@@ -30,10 +30,23 @@ document.addEventListener('mousemove', function(e){
     y: fy
   })
 
+  // Initial movement animation
   if (mouseMoved == false) {
     TweenMax.to(".cursor", .2, {css: {
       "background-color": "white"
     }})
+
+    TweenMax.from(".follower", 1, {
+      opacity: 0,
+      ease: Power2.easeInOut
+    });
+    TweenMax.to(".follower", 1, {
+        opacity: 1,
+        width: "40px",
+        height: "40px",
+        border: "2px solid #cc2255",
+        ease: Power2.easeInOut
+    });
     mouseMoved = true;
   }
 });
@@ -68,21 +81,6 @@ document.querySelectorAll('a, button, i, .close').forEach(item => {
   });
 })
 
-// Change text to drag me on zdog
-// document.querySelectorAll('.zdog-canvas').forEach(item => {
-//   item.addEventListener('mouseover', () => {
-//     TweenMax.to(followtext, 0.7, {css: {
-//       opacity: 1,
-//     }})
-//     followtextcontent.innerHTML = "drag me";
-//   });
-//   item.addEventListener('mouseleave', () => {
-//     TweenMax.to(followtext, 0.7, {css: {
-//       opacity: 0,
-//     }})
-//     followtextcontent.innerHTML = "";
-//   });
-// })
 
 // Change text to "new tab" for buttons and anchors
 document.querySelectorAll('a, button').forEach(item => {
@@ -100,9 +98,21 @@ document.querySelectorAll('a, button').forEach(item => {
   });
 })
 
-
-
-
+// Change text to "info" infoicon
+document.querySelectorAll('#infoicon').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    TweenMax.to(followtext, 0.7, {css: {
+      opacity: 1,
+    }})
+    followtextcontent.innerHTML = "INFO";
+  });
+  item.addEventListener('mouseleave', () => {
+    TweenMax.to(followtext, 0.7, {css: {
+      opacity: 0,
+    }})
+    followtextcontent.innerHTML = "";
+  });
+})
 
 // Changing cursor color when on modal content to make it visible
 $(function() {
@@ -110,6 +120,6 @@ $(function() {
       $('.cursor').css('background-color', '#1f1f1f');
     }, function() {
       // on mouseout, reset the background colour
-      $('.cursor').css('background-color', '');
+      $('.cursor').css('background-color', 'white');
     });
   });

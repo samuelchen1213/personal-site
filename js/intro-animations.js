@@ -30,18 +30,6 @@ function greetingAnimation() {
 
     $(".overlay").remove();
 
-    // Load in outside cursor
-    TweenMax.from(".follower", 1, {
-        opacity: 0,
-        width: "65px",
-        height: "65px",
-        border: "6px solid #EE964B",
-        ease: Power2.easeInOut
-    });
-    TweenMax.to(".follower", 1, {
-        opacity: 1,
-        ease: Power2.easeInOut
-    });
 }
 
 tl = gsap.timeline({onComplete: greetingAnimation});
