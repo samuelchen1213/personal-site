@@ -86,55 +86,34 @@ document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
   });
 })
 
-// Change text to "new tab" for buttons and anchors
-document.querySelectorAll('a, button').forEach(item => {
-  item.addEventListener('mouseover', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 1,
-    }})
-    followtextcontent.innerHTML = "NEW TAB";
-  });
-  item.addEventListener('mouseleave', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 0,
-    }})
-    followtextcontent.innerHTML = "";
-  });
-})
 
-// Change text to "Drag me" for zdog-canvas
-document.querySelectorAll('.zdog-canvas').forEach(item => {
-  item.addEventListener('mouseover', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 1,
-    }})
-    followtextcontent.innerHTML = "DRAG ME";
-    followtextcontent.style.color= '#cc2255';
-  });
-  item.addEventListener('mouseleave', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 0,
-    }})
-    followtextcontent.innerHTML = "";
-    followtextcontent.style.color= '#EE964B';
-  });
-})
+// Function that changes follow text content and color when hovering an element
+// elements: string of elements
+// text: string of text displayed
+// colorChange string of the color on mouseOver (Always reverts back to #EE964B)
+function changeFollowText(elements, text, colorChange) {
+  document.querySelectorAll(elements).forEach(item => {
+    item.addEventListener('mouseover', () => {
+      TweenMax.to(followtext, 0.7, {css: {
+        opacity: 1,
+      }})
+      followtextcontent.innerHTML = text;
+      if (colorChange) followtextcontent.style.color= colorChange;
+    });
+    item.addEventListener('mouseleave', () => {
+      TweenMax.to(followtext, 0.7, {css: {
+        opacity: 0,
+      }})
+      followtextcontent.innerHTML = "";
+      if (colorChange) followtextcontent.style.color= '#EE964B';
+    });
+  })
+}
 
-// Change text to "info" infoicon
-document.querySelectorAll('#infoicon').forEach(item => {
-  item.addEventListener('mouseover', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 1,
-    }})
-    followtextcontent.innerHTML = "INFO";
-  });
-  item.addEventListener('mouseleave', () => {
-    TweenMax.to(followtext, 0.7, {css: {
-      opacity: 0,
-    }})
-    followtextcontent.innerHTML = "";
-  });
-})
+changeFollowText('a, button', 'NEW TAB');
+changeFollowText('#infoicon', 'ABOUT');
+changeFollowText('.zdog-canvas', 'DRAG ME', '#cc2255');
+
 
 // Changing cursor color when on modal content to make it visible
 $(function() {
