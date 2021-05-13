@@ -409,7 +409,11 @@ body {
     display: none;
   }
 
-  .cursor2 {
+  .follower {
+    display: none;
+  }
+
+  .follow-text {
     display: none;
   }
 }
