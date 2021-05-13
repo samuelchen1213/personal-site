@@ -16,7 +16,7 @@ document.addEventListener('mousemove', function(e){
   let x = e.clientX;
   let y = e.clientY;
   let fx = e.clientX - 50;
-  let fy = e.clientY + 40;
+  let fy = e.clientY + 38;
   
   //main cursor
   cursorinner.style.left = x + 'px';
@@ -131,6 +131,7 @@ function changeFollowText(elements, text, colorChange) {
 changeFollowText('a, button', 'NEW TAB');
 changeFollowText('#infoicon', 'ABOUT');
 changeFollowText('.zdog-canvas', 'DRAG ME', '#cc2255');
+changeFollowText('.close', 'CLOSE');
 
 
 // Changing cursor color when on modal content to make it visible
