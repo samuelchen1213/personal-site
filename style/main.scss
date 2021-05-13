@@ -68,10 +68,8 @@ body {
       transition: 0.3s; 
       font-size: 1.4em !important;
       opacity: $myopacity; // GSAP
-      cursor: none;
 
       &:hover {
-        // cursor: pointer;
         color: $my-orange; 
       }
     }
@@ -137,7 +135,7 @@ body {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        max-width: 300px;
+        max-width: 310px;
         overflow: hidden;
 
         .resume-button {
@@ -206,7 +204,6 @@ body {
           }
           &:hover .front {
             transform: translateY(-6px);
-            cursor: none;
             transition:
               transform
               250ms
@@ -241,7 +238,6 @@ body {
 
           &:hover i {
             color: $my-orange;
-            cursor: none;
           }
         }
       
@@ -307,8 +303,6 @@ body {
 
       &:hover {
         color: $my-orange;
-        cursor: none;
-        // cursor: pointer;
       }
     }
 
@@ -484,13 +478,44 @@ body {
 
 // Mobile specific
 @media (max-width: 800px) {
-  .zdog-container {
-    // don't want to interfere with scrolling
-    pointer-events: none;
-  }
-
+  // Get rid of learn statement
   #learn {
     display: none;
+  }
+
+  // don't want to interfere with scrolling
+  .zdog-container {
+    pointer-events: none;
+  }
+  
+  // Remove cuustom cursor
+  * {
+    cursor: default;
+  }
+
+  #infoicon:hover {
+    cursor: pointer;
+    color: $my-orange; 
+  }
+
+  .close:hover,
+  .close:focus {
+    cursor: pointer;
+  }
+
+  .resume-button:hover .front {
+    cursor: pointer;
+  }
+
+  #grit:hover {
+    cursor: pointer;
+  }
+
+  #item1, #item2, #item3, #item4, #item5 {
+    &:hover i {
+      color: $my-orange;
+      cursor: pointer;
+    }
   }
 
   .cursor  {
