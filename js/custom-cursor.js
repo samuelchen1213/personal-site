@@ -1,4 +1,8 @@
-// Credit to https://codepen.io/nickforthewin/pen/QWLzVjY
+// Credit to 
+// - https://codepen.io/nickforthewin/pen/QWLzVjY
+// - https://codepen.io/clementGir/pen/RQqvQx
+// - https://codepen.io/hbthen3rd/pen/ywxjWx
+// For inspiration
 
 let cursor = document.querySelector('.follower');
 let cursorinner = document.querySelector('.cursor');
@@ -81,6 +85,7 @@ document.querySelectorAll('a, button, i, .close').forEach(item => {
   });
 })
 
+// Change 
 document.querySelectorAll('.zdog-canvas').forEach(item => {
   item.addEventListener('mouseover', () => {
     TweenMax.to(".cursor, .follower", .1, {css: {
@@ -89,8 +94,11 @@ document.querySelectorAll('.zdog-canvas').forEach(item => {
     cursorinner.classList.add('inner-hover')
   });
   item.addEventListener('mouseleave', () => {
-    TweenMax.to(".cursor, .follower", .1, {css: {
+    TweenMax.to(".follower", .1, {css: {
       opacity: 1
+    }})
+    TweenMax.to(".cursor", .1, {css: {
+      opacity: 0.7
     }})
     cursorinner.classList.remove('inner-hover')
   });

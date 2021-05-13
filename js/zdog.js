@@ -25,15 +25,15 @@ let ring = new Zdog.Ellipse({
   addTo: hole,
   color: "black",
   stroke: 5,
-  diameter: 130,
+  diameter: 10,
   rotate: {y: TAU/8}
 })
 ring.copy({
-  diameter: 160,
+  diameter: 120,
   rotate: {y: TAU/3, x: -TAU/8}
 })
 ring.copy({
-  diameter: 190,
+  diameter: 130,
   rotate: {x: -TAU/3}
 })
 
