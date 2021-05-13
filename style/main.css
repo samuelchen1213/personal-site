@@ -220,12 +220,7 @@ body {
 }
 .banner .container .zdog-container .zdog-canvas {
   vertical-align: middle;
-  cursor: move;
-  cursor: grab;
   transition: 0.3s;
-}
-.banner .container .zdog-container .zdog-canvas:active {
-  cursor: grabbing;
 }
 .banner .copyright-footer {
   cursor: default;
@@ -357,12 +352,17 @@ body {
 .inner-hover {
   width: 22px;
   height: 22px;
+  opacity: 0;
 }
 
 .cursor-click {
   width: 35px;
   height: 35px;
-  opacity: 0.5;
+  opacity: 0.85;
+}
+
+.opacitynone {
+  opacity: 0 !important;
 }
 
 .overlay {

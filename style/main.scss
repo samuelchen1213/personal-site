@@ -268,13 +268,7 @@ body {
 
       .zdog-canvas {
         vertical-align: middle;
-        cursor: move; 
-        cursor: grab;
         transition: 0.3s;
-      }
-
-      .zdog-canvas:active {
-        cursor: grabbing;
       }
     }
   }
@@ -429,12 +423,17 @@ body {
 .inner-hover {
   width: 22px;
   height: 22px;
+  opacity: 0;
 }
 
 .cursor-click {
   width: 35px;
   height: 35px;
-  opacity: .5;
+  opacity: .85;
+}
+
+.opacitynone {
+  opacity: 0 !important;
 }
 
 .overlay {

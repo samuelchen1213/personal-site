@@ -4,8 +4,8 @@
 // - https://codepen.io/hbthen3rd/pen/ywxjWx
 // For inspiration
 
-let cursor = document.querySelector('.follower');
 let cursorinner = document.querySelector('.cursor');
+let cursorouter = document.querySelector('.follower');
 let followtext = document.querySelector('.follow-text');
 let followtextcontent = document.querySelector('.follow-text-content');
 let a = document.querySelectorAll('a');
@@ -23,7 +23,7 @@ document.addEventListener('mousemove', function(e){
   cursorinner.style.top = y + 'px';
   
   // follow ring cursor
-  TweenMax.to(cursor, 0.5, {
+  TweenMax.to(cursorouter, 0.5, {
     x: x,
     y: y
   })
@@ -65,8 +65,9 @@ document.addEventListener('mouseup', function(){
   cursorinner.classList.remove('cursor-click')
 });
 
+
 // Cursor styling when hovering over a, buttons, i, and .close
-document.querySelectorAll('a, button, i, .close').forEach(item => {
+document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
   item.addEventListener('mouseover', () => {
     TweenMax.to(".follower", .2, {css: {
       border: "3.5px solid #EE964B",
@@ -85,26 +86,6 @@ document.querySelectorAll('a, button, i, .close').forEach(item => {
   });
 })
 
-// Change 
-document.querySelectorAll('.zdog-canvas').forEach(item => {
-  item.addEventListener('mouseover', () => {
-    TweenMax.to(".cursor, .follower", .1, {css: {
-      opacity: 0
-    }})
-    cursorinner.classList.add('inner-hover')
-  });
-  item.addEventListener('mouseleave', () => {
-    TweenMax.to(".follower", .1, {css: {
-      opacity: 1
-    }})
-    TweenMax.to(".cursor", .1, {css: {
-      opacity: 0.7
-    }})
-    cursorinner.classList.remove('inner-hover')
-  });
-})
-
-
 // Change text to "new tab" for buttons and anchors
 document.querySelectorAll('a, button').forEach(item => {
   item.addEventListener('mouseover', () => {
@@ -118,6 +99,24 @@ document.querySelectorAll('a, button').forEach(item => {
       opacity: 0,
     }})
     followtextcontent.innerHTML = "";
+  });
+})
+
+// Change text to "Drag me" for zdog-canvas
+document.querySelectorAll('.zdog-canvas').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    TweenMax.to(followtext, 0.7, {css: {
+      opacity: 1,
+    }})
+    followtextcontent.innerHTML = "DRAG ME";
+    followtextcontent.style.color= '#cc2255';
+  });
+  item.addEventListener('mouseleave', () => {
+    TweenMax.to(followtext, 0.7, {css: {
+      opacity: 0,
+    }})
+    followtextcontent.innerHTML = "";
+    followtextcontent.style.color= '#EE964B';
   });
 })
 
