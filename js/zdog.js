@@ -1,5 +1,3 @@
-
-// Color Palette
 const TAU = Zdog.TAU;
 const orange = '#EE964B';
 const blue = '#0d43da';
