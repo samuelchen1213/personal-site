@@ -40,7 +40,7 @@ ring.copy({
 let particle = new Zdog.Shape({
   addTo: hole,
   color: 'white',
-  stroke: 10,
+  stroke: 8,
   translate: {x: -160},
 })
 

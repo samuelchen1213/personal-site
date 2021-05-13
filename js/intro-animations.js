@@ -29,6 +29,19 @@ function greetingAnimation() {
     }, 300)
 
     $(".overlay").remove();
+
+    // Load in outside cursor
+    TweenMax.from(".follower", 1, {
+        opacity: 0,
+        width: "65px",
+        height: "65px",
+        border: "6px solid #EE964B",
+        ease: Power2.easeInOut
+    });
+    TweenMax.to(".follower", 1, {
+        opacity: 1,
+        ease: Power2.easeInOut
+    });
 }
 
 tl = gsap.timeline({onComplete: greetingAnimation});
@@ -156,25 +169,3 @@ TweenMax.to("#item5", 1, {
     opacity: 1,
     ease: Power2.easeInOut
 });
-
-TweenMax.from(".cursor", 1, {
-    delay: baseDelay,
-    opacity: 0,
-    ease: Power2.easeInOut
-});
-TweenMax.to(".cursor", 1, {
-    delay: baseDelay,
-    opacity: 1,
-    ease: Power2.easeInOut
-});
-TweenMax.from(".cursor2", 1, {
-    delay: 1,
-    opacity: 0,
-    ease: Power2.easeInOut
-});
-TweenMax.to(".cursor2", 1, {
-    delay: 1,
-    opacity: 0.6,
-    ease: Power2.easeInOut
-});
-

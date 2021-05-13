@@ -134,11 +134,11 @@ body {
         overflow: hidden;
 
         .resume-button {
+          transform: translateY(2px);
           position: relative;
           border: none;
           background: transparent;
           padding: 0;
-          // cursor: pointer;
           outline-offset: 4px;
           transition: filter 250ms;
           overflow: visible;
@@ -355,9 +355,10 @@ body {
       text-decoration: none;
       color: #113dac;
       font-weight: 500;
+      transition: 0.4s;
 
       &:hover {
-        text-decoration: underline;
+        color: $my-orange;
       }
     }
   }
@@ -377,7 +378,7 @@ body {
   }
 }
 
-.cursor {
+.follower {
   width: 40px;
   height: 40px;
   border-radius: 100%;
@@ -389,17 +390,30 @@ body {
   opacity: $myopacity;
 }
 
-.cursor2 {
+.cursor {
   width: 15px;
   height: 15px;
   border-radius: 100%;
-  background-color: white;
-  opacity: $myopacity;
+  background-color: transparent; // Change to white on first mousemove
   position: fixed;
   transform: translate(-50%, -50%);
   pointer-events: none;
   transition: width .2s, height .2s, opacity .1s;
   z-index: 1000;
+  opacity: 0.7;
+}
+
+.follow-text {
+  opacity: $myopacity;
+  font-size: 0.7em;
+  font-family: 'Roboto Mono';
+  color: $my-orange;
+  z-index: 1000;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
 }
 
 .hover {
@@ -462,6 +476,10 @@ body {
 @media (max-width: 800px) {
   .zdog-container {
     pointer-events: none;
+  }
+
+  #learn {
+    display: none;
   }
 
   .cursor  {
