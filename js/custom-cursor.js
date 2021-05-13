@@ -86,6 +86,24 @@ document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
   });
 })
 
+// Makes ring larger when hovering over zdog-canvas
+document.querySelectorAll('.zdog-canvas').forEach(item => {
+  item.addEventListener('mouseover', () => {
+    TweenMax.to(".follower", .2, {css: {
+      border: "3.5px solid #cc2255",
+      width: "50px",
+      height: "50px",
+    }})
+  });
+  item.addEventListener('mouseleave', () => {
+    TweenMax.to(".follower", .2, {css: {
+      width: "40px",
+      height: "40px",
+      border: "2px solid #cc2255"
+    }})
+  });
+})
+
 
 // Function that changes follow text content and color when hovering an element
 // elements: string of elements

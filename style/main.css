@@ -332,7 +332,8 @@ body {
 
 .follow-text {
   opacity: 0;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: 700;
   font-family: "Roboto Mono";
   color: #EE964B;
   z-index: 1000;

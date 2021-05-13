@@ -387,9 +387,11 @@ body {
 }
 
 .follower {
+  // Starting:
   width: 65px;
   height: 65px;
   border: 6px solid #EE964B;
+  // GSAP changes to these:
   // width: 40px;
   // height: 40px;
   // border: 2px solid #cc2255;
@@ -403,7 +405,8 @@ body {
 
 .follow-text {
   opacity: $myopacity;
-  font-size: 0.7em;
+  font-size: 0.8em;
+  font-weight: 700;
   font-family: 'Roboto Mono';
   color: $my-orange;
   z-index: 1000;
