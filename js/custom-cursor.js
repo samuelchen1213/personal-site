@@ -4,38 +4,29 @@ var cursor = document.querySelector('.cursor');
 var cursorinner = document.querySelector('.cursor2');
 var a = document.querySelectorAll('a');
 
-// $(document).ready(function() {
-//     var x = instanceOfMouseEvent.clientX;
-//     var y = instanceOfMouseEvent.clientY;
-//     cursorinner.style.left = x + 'px';
-//     cursorinner.style.top = y + 'px';
-//     cursor.style.left = x + "px";
-//     cursor.style.top = y + "px";
-// });
-    
-
-
+// On mouse move, update the cursor location
 document.addEventListener('mousemove', function(e){
   var x = e.clientX;
   var y = e.clientY;
   cursorinner.style.left = x + 'px';
   cursorinner.style.top = y + 'px';
   TweenMax.to(cursor, .5, {
-    x: e.pageX,
-    y: e.pageY
+    x: x,
+    y: y
   })
 });
 
+// Add cursor-click style when mousedown
 document.addEventListener('mousedown', function(){
-  cursor.classList.add('click');
-  cursorinner.classList.add('cursorinnerhover')
+  cursorinner.classList.add('cursor-click')
 });
 
+// Remove cursor-click style when mouseup
 document.addEventListener('mouseup', function(){
-  cursor.classList.remove('click')
-  cursorinner.classList.remove('cursorinnerhover')
+  cursorinner.classList.remove('cursor-click')
 });
 
+// Cursor styling when hovering over a, buttons, i, and .close
 document.querySelectorAll('a, button, i, .close').forEach(item => {
   item.addEventListener('mouseover', () => {
     TweenMax.to(".cursor", .2, {css: {
@@ -55,6 +46,7 @@ document.querySelectorAll('a, button, i, .close').forEach(item => {
   });
 })
 
+// Changing cursor color when on modal content to make it visible
 $(function() {
     $('.modal-content').hover(function() {
       $('.cursor2').css('background-color', '#1f1f1f');
