@@ -405,10 +405,6 @@ body {
   }
 }
 @media (max-width: 800px) {
-  .modal-content {
-    height: 90%;
-  }
-
   #learn {
     display: none;
   }
@@ -454,6 +450,11 @@ body {
 
   .follow-text {
     display: none;
+  }
+}
+@media (max-width: 540px) {
+  .modal-content {
+    height: 75%;
   }
 }
 

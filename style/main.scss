@@ -486,14 +486,8 @@ body {
   }
 }
 
-// Mobile specific
+// Tablet and Mobile specific
 @media (max-width: 800px) {
-  // Modal height
-  .modal-content {
-    height: 90%;
-  }
-  
-  
   // Get rid of learn statement
   #learn {
     display: none;
@@ -547,10 +541,14 @@ body {
   }
 }
 
-// Edgecase problem: If a person uses a tablet, the cursor will show up
+// Edgecase problem: If a person uses a tablet large enough, the cursor will show up
 
-
-
+// Mobile specific
+@media (max-width: 540px) {
+  .modal-content {
+    height: 75%;
+  }
+}
 
 
 

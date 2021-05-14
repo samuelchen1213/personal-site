@@ -1,5 +1,6 @@
 let myorange = '#EE964B';
 
+// ==== Change description when hovering on media icons ====
 // iconHover takes in a string of the div ID and changes the description accordingly
 function iconHover(el) {
     // Description change
@@ -57,7 +58,7 @@ function iconHoverOff(el) {
     }
 }
 
-//  -- Modal --
+//  ==== Modal ====
 var modal = document.getElementById("myModal");
 var btn = document.getElementById("infoicon");
 var span = document.getElementsByClassName("close")[0];
