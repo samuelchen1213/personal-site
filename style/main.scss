@@ -488,6 +488,12 @@ body {
 
 // Mobile specific
 @media (max-width: 800px) {
+  // Modal height
+  .modal-content {
+    height: 90%;
+  }
+  
+  
   // Get rid of learn statement
   #learn {
     display: none;

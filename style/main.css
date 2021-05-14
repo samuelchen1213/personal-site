@@ -405,6 +405,10 @@ body {
   }
 }
 @media (max-width: 800px) {
+  .modal-content {
+    height: 90%;
+  }
+
   #learn {
     display: none;
   }
