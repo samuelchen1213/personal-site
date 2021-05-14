@@ -113,7 +113,6 @@ body {
   color: white;
 }
 .banner .container .content .contact .media {
-  overflow: visible;
   padding-top: 15px;
   position: relative;
   display: flex;
@@ -121,7 +120,6 @@ body {
   align-items: center;
   max-width: 310px;
   overflow: hidden;
-  overflow: visible;
 }
 .banner .container .content .contact .media .resume-button {
   position: relative;
@@ -305,6 +303,11 @@ body {
 .modal .close:hover, .modal .close:focus {
   color: black;
   text-decoration: none;
+}
+
+.modal-open {
+  overflow: hidden;
+  position: fixed;
 }
 
 .cursor {

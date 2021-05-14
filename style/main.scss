@@ -130,7 +130,6 @@ body {
       }
   
       .media {
-        overflow: visible;
         padding-top: 15px;
         position: relative;
         display: flex;
@@ -138,7 +137,6 @@ body {
         align-items: center;
         max-width: 310px;
         overflow: hidden;
-        overflow: visible;
 
         // Bug: On firefox, the resume button is shifted up by a few pixels for some annoying reason
         .resume-button {
@@ -374,6 +372,13 @@ body {
       // cursor: pointer;
     }
   }
+}
+
+// Add to body when modal is open
+// Prevents user from scrolling in the back
+.modal-open {
+  overflow: hidden;
+  position: fixed;
 }
 
 .cursor {

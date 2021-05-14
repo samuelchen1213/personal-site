@@ -73,6 +73,7 @@ btn.onclick = function() {
         opacity: 1,
         ease: Power2.easeInOut
     })
+    $("body").addClass("modal-open");
 }
 
 // Remove modal when clicling X
@@ -82,6 +83,7 @@ span.onclick = function() {
         ease: Power2.easeInOut
     })
     setTimeout(removeModal, 500);
+    $("body").removeClass("modal-open");
 }
 
 // Remove modal when clicling outside
@@ -92,5 +94,6 @@ window.onclick = function(event) {
         ease: Power2.easeInOut
     })
     setTimeout(removeModal, 500);
+    $("body").removeClass("modal-open");
   }
 }
