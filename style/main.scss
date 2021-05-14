@@ -130,6 +130,7 @@ body {
       }
   
       .media {
+        overflow: visible;
         padding-top: 15px;
         position: relative;
         display: flex;
@@ -137,16 +138,17 @@ body {
         align-items: center;
         max-width: 310px;
         overflow: hidden;
+        overflow: visible;
 
+        // Bug: On firefox, the resume button is shifted up by a few pixels for some annoying reason
         .resume-button {
-          transform: translateY(2px);
           position: relative;
           border: none;
           background: transparent;
           padding: 0;
           outline-offset: 4px;
           transition: filter 250ms;
-          overflow: visible;
+          overflow: visible !important;
           user-select: none;
           -webkit-tap-highlight-color: transparent;
 
@@ -230,17 +232,17 @@ body {
           }
         }
 
-        #item1, #item2, #item3, #item4, #item5 {
+        .items {
           font-size: 1.8em !important;
           opacity: $myopacity; //GSAP
-          overflow: visible;
           transition: 0.5s;
+          overflow: visible;
 
           &:hover i {
             color: $my-orange;
           }
         }
-      
+
         a {
             background-color: transparent;
             padding: 0; 
@@ -313,9 +315,10 @@ body {
   padding: 0;
   top: 0;
   left: 0;
-  overflow: auto; 
+  overflow: hidden; 
   background-color: rgba(0,0,0,0.6);
   justify-content: center;
+  align-items: center;
   opacity: $myopacity; // GSAP
 
   .modal-content {

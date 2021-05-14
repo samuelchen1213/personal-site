@@ -68,7 +68,7 @@ function removeModal() {
 
 // Display the modal
 btn.onclick = function() {
-    modal.style.display = "block";
+    modal.style.display = "flex";
     TweenMax.to(".modal", 0.5, {
         opacity: 1,
         ease: Power2.easeInOut

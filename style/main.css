@@ -113,6 +113,7 @@ body {
   color: white;
 }
 .banner .container .content .contact .media {
+  overflow: visible;
   padding-top: 15px;
   position: relative;
   display: flex;
@@ -120,16 +121,16 @@ body {
   align-items: center;
   max-width: 310px;
   overflow: hidden;
+  overflow: visible;
 }
 .banner .container .content .contact .media .resume-button {
-  transform: translateY(2px);
   position: relative;
   border: none;
   background: transparent;
   padding: 0;
   outline-offset: 4px;
   transition: filter 250ms;
-  overflow: visible;
+  overflow: visible !important;
   user-select: none;
   -webkit-tap-highlight-color: transparent;
 }
@@ -191,13 +192,13 @@ body {
 .banner .container .content .contact .media .resume-button:focus:not(:focus-visible) {
   outline: none;
 }
-.banner .container .content .contact .media #item1, .banner .container .content .contact .media #item2, .banner .container .content .contact .media #item3, .banner .container .content .contact .media #item4, .banner .container .content .contact .media #item5 {
+.banner .container .content .contact .media .items {
   font-size: 1.8em !important;
   opacity: 0;
-  overflow: visible;
   transition: 0.5s;
+  overflow: visible;
 }
-.banner .container .content .contact .media #item1:hover i, .banner .container .content .contact .media #item2:hover i, .banner .container .content .contact .media #item3:hover i, .banner .container .content .contact .media #item4:hover i, .banner .container .content .contact .media #item5:hover i {
+.banner .container .content .contact .media .items:hover i {
   color: #EE964B;
 }
 .banner .container .content .contact .media a {
@@ -256,9 +257,10 @@ body {
   padding: 0;
   top: 0;
   left: 0;
-  overflow: auto;
+  overflow: hidden;
   background-color: rgba(0, 0, 0, 0.6);
   justify-content: center;
+  align-items: center;
   opacity: 0;
 }
 .modal .modal-content {
