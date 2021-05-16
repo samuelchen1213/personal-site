@@ -139,6 +139,7 @@ body {
         overflow: hidden;
 
         // Bug: On firefox, the resume button is shifted up by a few pixels for some annoying reason
+        // Credit to: https://www.joshwcomeau.com/animation/3d-button/
         .resume-button {
           position: relative;
           border: none;
