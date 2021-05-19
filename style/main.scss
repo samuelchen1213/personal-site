@@ -29,6 +29,8 @@ body {
   height: 100%;
   z-index: -1000;
   position: fixed;
+
+  display: none; // show for desktop
 }
 
 .banner {
@@ -478,6 +480,10 @@ body {
 }
 
 @media (min-width: 1100px) {
+  #threejs {
+    display: block;
+  }
+
   .modal-content {
     width: 65% !important;
   }
@@ -508,7 +514,7 @@ body {
 }
 
 // Tablet and Mobile specific
-@media (max-width: 800px) {
+@media (max-width: 800px) { 
   // Get rid of learn statement
   #learn {
     display: none;
