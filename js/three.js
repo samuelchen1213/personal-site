@@ -11,7 +11,7 @@ renderer.setSize(window.innerWidth,window.innerHeight);
 
 // Make sure the project is responsive based on window resizing
 window.addEventListener('resize', () => {
-    renderer.setSize(window.innerWidth,window.innerHeight);
+    renderer.setSize(window.innerWidth, window.innerHeight);
     camera.aspect = window.innerWidth / window.innerHeight;
 
     camera.updateProjectionMatrix();
@@ -40,7 +40,7 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
         asteroid1 = object;
         object.position.z -= 500;
         object.position.y -= 200;
-        object.position.x += 490;
+        object.position.x += 530;
 
         this.tl = new TimelineMax();
         this.tl.from(asteroid1.scale, 2, {delay:3, y:0, x:0, z:0, ease: Expo.easeOut});
