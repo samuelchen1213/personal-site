@@ -6,10 +6,9 @@ const distance = 12;
 let isSpinning = true;
 
 const illo = new Zdog.Illustration({
-  // set canvas with selector
   element: '.zdog-canvas',
   dragRotate: true,
-  rotate: { y: -TAU/8 ,x:TAU/15}
+  rotate: { y: -TAU/8, x: TAU/13}
 });
 
 // Space stuff
@@ -35,25 +34,25 @@ ring.copy({
   rotate: {x: -TAU/3}
 })
 
-let particle = new Zdog.Shape({
-  addTo: hole,
-  color: 'white',
-  stroke: 8,
-  translate: {x: -160},
-})
+// let particle = new Zdog.Shape({
+//   addTo: hole,
+//   color: 'white',
+//   stroke: 8,
+//   translate: {x: -160},
+// })
 
-particle.copy({
-  translate: {y: -220, z: 85},
-})
-particle.copy({
-  translate: {y: 135, z: -35, x: 120},
-})
-particle.copy({
-  translate: {y: 240, x: -100},
-})
-particle.copy({
-  translate: {z: -120, y: 150},
-})
+// particle.copy({
+//   translate: {y: -220, z: 85},
+// })
+// particle.copy({
+//   translate: {y: 135, z: -35, x: 120},
+// })
+// particle.copy({
+//   translate: {y: 240, x: -100},
+// })
+// particle.copy({
+//   translate: {z: -120, y: 150},
+// })
 
 // Astronaut
 let body = new Zdog.RoundedRect({
@@ -64,8 +63,8 @@ let body = new Zdog.RoundedRect({
   fill: true,
   cornerRadius: 1,
   stroke: 16,
-  translate: {z: -140, y: -200},
-  rotate: {x: TAU/-5}
+  translate: {z: -140, y: -120},
+  rotate: {x: TAU/-6}
 });
 
 let backpack = new Zdog.RoundedRect({
@@ -261,7 +260,7 @@ let machine = new Zdog.Box({
   rightFace: '#E62',
   topFace: '#ED0',
   bottomFace: '#636',
-  translate: {y: -150, z: 80, x: -100},
+  translate: {y: -200, z: 80, x: -100},
   rotate: {x: TAU/8, y: TAU/8}
 })
 
@@ -301,7 +300,7 @@ let laptop = new Zdog.Box({
   topFace: '#C0C0C0',
   bottomFace: '#C0C0C0',
   rearFace:'#C0C0C0',
-  translate: {y: 160, x: 100, z: 80},
+  translate: {y: 90, x: 100, z: 80},
   rotate: {x: TAU/8, y: -TAU/8}
 })
 
@@ -343,6 +342,85 @@ let keyboard = new Zdog.Box({
   rotate: {x: -TAU/3},
   translate: {y: 26, z: 15}
 });
+
+let book = new Zdog.Box({
+  addTo: illo,
+  width: 22,
+  height: 30,
+  depth: 3,
+  stroke: false,
+  color: '#C25',
+  frontFace: "#f2eecb",
+  translate:{y: 200, x: -100, z: -30},
+  rotate: {x: -TAU/10, y: -TAU/4}
+})
+
+let bookHalf = new Zdog.Box({
+  addTo: book,
+  width: 22,
+  height: 30,
+  depth: 3,
+  stroke: false,
+  color: "#C25",
+  rearFace: '#f2eecb',
+  translate: { x: -15, z: 9 },
+  rotate: {y: TAU/3},
+})
+
+
+let text = new Zdog.Shape({
+  addTo: book,
+  path: [
+    {x: -7,},{x: 7}
+  ],
+  translate: {x: 1, z: 2, y: -10}
+})
+
+text.copy({
+  translate: {x: 1, z: 2, y: -7}
+})
+text.copy({
+  translate: {x: 1, z: 2, y: -4}
+})
+text.copy({
+  translate: {x: 1, z: 2, y: -1}
+})
+text.copy({
+  translate: {x: 1, z: 2, y: 2}
+})
+text.copy({
+  translate: {x: 1, z: 2, y: 5}
+})
+text.copy({
+  translate: {x: 1, z: 2, y: 8}
+})
+
+
+let text2 = new Zdog.Shape({
+  addTo: bookHalf,
+  path: [
+    {x: -7,},{x: 7}
+  ],
+  translate: {x: 1, z: -2, y: -10}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: -7}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: -4}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: -1}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: 2}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: 5}
+})
+text2.copy({
+  translate: {x: 1, z: -2, y: 8}
+})
 
 function animate() {
   illo.rotate.y += isSpinning ? 0.002 : 0;
