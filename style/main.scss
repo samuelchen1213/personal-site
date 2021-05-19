@@ -15,7 +15,20 @@ $myopacity: 0; // For testing
 }
 
 body {
-  background-color: rgb(18, 21, 32);
+  background-color: #121520;
+}
+
+#threejs {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+  position: fixed;
 }
 
 .banner {
@@ -321,6 +334,13 @@ body {
   opacity: $myopacity; // GSAP
 
   .modal-content {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
     background-color: white;
     margin: 15% auto;
     padding: 30px;
