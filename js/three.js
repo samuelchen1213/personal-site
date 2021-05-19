@@ -41,10 +41,6 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
         object.position.z -= 500;
         object.position.y -= 200;
         object.position.x += 490;
-        
-        object.rotation.x = 120;
-        object.rotation.y = 120;
-        
 
         this.tl = new TimelineMax();
         this.tl.from(asteroid1.scale, 2, {delay:3, y:0, x:0, z:0, ease: Expo.easeOut});
@@ -66,9 +62,6 @@ mtlLoader.load('../assets/threejs/asteroid2.mtl', function (materials) {
         object.position.z -= 900;
         object.position.x += 300;
         object.position.y += 300;
-
-        object.rotation.x = 120;
-        object.rotation.y = 120;
 
         this.tl = new TimelineMax();
         this.tl.from(asteroid2.scale, 2, {y: -10, delay:3.5, y:0, x:0, z:0, ease: Expo.easeOut});
