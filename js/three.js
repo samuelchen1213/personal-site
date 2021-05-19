@@ -43,7 +43,7 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
         object.position.x += 530;
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid1.scale, 2, {delay:3, y:0, x:0, z:0, ease: Expo.easeOut});
+        this.tl.from(asteroid1.position, 5.5, {delay:2.5, x:850, y: -1000, ease: Expo.easeOut});
     });
 });
 
@@ -64,7 +64,7 @@ mtlLoader.load('../assets/threejs/asteroid2.mtl', function (materials) {
         object.position.y += 300;
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid2.scale, 2, {y: -10, delay:3.5, y:0, x:0, z:0, ease: Expo.easeOut});
+        this.tl.from(asteroid2.position, 6.5, {delay:3, y:850, x: -1000, ease: Expo.easeOut});
     });
 });
 
