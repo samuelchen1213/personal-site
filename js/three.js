@@ -44,7 +44,7 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
         object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid1.position, 4, {delay:2.5, x:750, y: -200, z: 400, ease: Back.easeOut});
+        this.tl.from(asteroid1.position, 4, {delay:2.5, x:650, y: -600, z: 400, ease: Back.easeOut});
     });
 });
 
@@ -60,13 +60,13 @@ mtlLoader.load('../assets/threejs/asteroid2.mtl', function (materials) {
     objLoader.load('../assets/threejs/asteroid2.obj', function (object) {
         scene.add(object);
         asteroid2 = object;
-        object.position.z -= 800;
+        object.position.z -= 850;
         object.position.x += 350;
         object.position.y += 300;
         object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid2.position, 6, {delay:2.5, y:850, x: -800, z:-1000, ease: Back.easeOut});
+        this.tl.from(asteroid2.position, 6, {delay:2.5, y:950, x: -500, z:-1000, ease: Back.easeOut});
     });
 });
 
