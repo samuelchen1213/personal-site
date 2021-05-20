@@ -17,6 +17,8 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
 })
 
+
+
 // Add a light
 var light1 = new THREE.PointLight(0xFFFFFF, 1.7, 1000)
 light1.position.set(150,15,15);
@@ -39,12 +41,12 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
         scene.add(object);
         asteroid1 = object;
         object.position.z -= 550;
-        object.position.y -= 200;
-        object.position.x += 530;
+        object.position.y -= 210;
+        object.position.x += 560;
         object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid1.position, 4, {delay:2.5, x:650, y: -600, z: 400, ease: Back.easeOut});
+        this.tl.from(asteroid1.position, 6, {delay:2.5, x:650, y: -600, z: 400, ease: Back.easeOut});
     });
 });
 
@@ -66,7 +68,7 @@ mtlLoader.load('../assets/threejs/asteroid2.mtl', function (materials) {
         object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
-        this.tl.from(asteroid2.position, 6, {delay:2.5, y:950, x: -500, z:-1000, ease: Back.easeOut});
+        this.tl.from(asteroid2.position, 6, {delay:2.7, y:950, x: -500, z:-1000, ease: Back.easeOut});
     });
 });
 

@@ -24,8 +24,8 @@ document.addEventListener('mousemove', function(e){
   
   // follow ring cursor
   TweenMax.to(cursorouter, 0.5, {
-    x: x,
-    y: y
+    x: x - 22,
+    y: y - 22
   })
 
   // follow text
@@ -70,6 +70,8 @@ document.addEventListener('mouseup', function(){
 document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
   item.addEventListener('mouseover', () => {
     TweenMax.to(".follower", .2, {css: {
+      top: "-7px",
+      left: "-7px",
       border: "3.5px solid #EE964B",
       width: "50px",
       height: "50px",
@@ -78,6 +80,8 @@ document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
   });
   item.addEventListener('mouseleave', () => {
     TweenMax.to(".follower", .2, {css: {
+      top: "0px",
+      left: "0px",
       width: "40px",
       height: "40px",
       border: "2px solid #cc2255"
@@ -90,6 +94,8 @@ document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
 document.querySelectorAll('.zdog-canvas').forEach(item => {
   item.addEventListener('mouseover', () => {
     TweenMax.to(".follower", .2, {css: {
+      top: "-7px",
+      left: "-7px",
       border: "3.5px solid #cc2255",
       width: "50px",
       height: "50px",
@@ -97,6 +103,8 @@ document.querySelectorAll('.zdog-canvas').forEach(item => {
   });
   item.addEventListener('mouseleave', () => {
     TweenMax.to(".follower", .2, {css: {
+      top: "0px",
+      left: "0px",
       width: "40px",
       height: "40px",
       border: "2px solid #cc2255"
