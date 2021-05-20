@@ -305,13 +305,13 @@ body {
   font-size: 1.2em;
   line-height: 1.4;
 }
-.modal .modal-content a {
+.modal .modal-content p a {
   text-decoration: none;
   color: #113dac;
   font-weight: 500;
   transition: 0.4s;
 }
-.modal .modal-content a:hover {
+.modal .modal-content p a:hover {
   color: #EE964B;
 }
 .modal .close {

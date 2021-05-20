@@ -368,16 +368,16 @@ body {
       font-weight: 300;
       font-size: 1.2em;
       line-height: 1.4;
-    }
 
-    a {
-      text-decoration: none;
-      color: #113dac;
-      font-weight: 500;
-      transition: 0.4s;
-
-      &:hover {
-        color: $my-orange;
+      a {
+        text-decoration: none;
+        color: #113dac;
+        font-weight: 500;
+        transition: 0.4s;
+  
+        &:hover {
+          color: $my-orange;
+        }
       }
     }
   }

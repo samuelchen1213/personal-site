@@ -38,9 +38,10 @@ mtlLoader.load('../assets/threejs/asteroid1.mtl', function (materials) {
     objLoader.load('../assets/threejs/asteroid1.obj', function (object) {
         scene.add(object);
         asteroid1 = object;
-        object.position.z -= 500;
+        object.position.z -= 550;
         object.position.y -= 200;
         object.position.x += 530;
+        object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
         this.tl.from(asteroid1.position, 4, {delay:2.5, x:750, y: -200, z: 400, ease: Back.easeOut});
@@ -59,9 +60,10 @@ mtlLoader.load('../assets/threejs/asteroid2.mtl', function (materials) {
     objLoader.load('../assets/threejs/asteroid2.obj', function (object) {
         scene.add(object);
         asteroid2 = object;
-        object.position.z -= 900;
-        object.position.x += 300;
+        object.position.z -= 800;
+        object.position.x += 350;
         object.position.y += 300;
+        object.scale.set(0.9,0.9,0.9);
 
         this.tl = new TimelineMax();
         this.tl.from(asteroid2.position, 6, {delay:2.5, y:850, x: -800, z:-1000, ease: Back.easeOut});
@@ -73,11 +75,11 @@ var render = function() {
     requestAnimationFrame(render);
     
     // Rotate the objects indefinitely
-    asteroid1.rotation.y -= .003;
-    asteroid1.rotation.x -= .002;
+    asteroid1.rotation.y -= .001;
+    asteroid1.rotation.x -= .0015;
     
-    asteroid2.rotation.x -= .003;
-    asteroid2.rotation.y -= .002;
+    asteroid2.rotation.x -= .001;
+    asteroid2.rotation.y -= .0015;
 
     renderer.render(scene, camera);
 }
