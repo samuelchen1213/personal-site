@@ -514,6 +514,13 @@ body {
   }
 }
 
+// For tall screens
+@media (min-height: 800px) and (min-width: 1100px) {
+  .container {
+    transform: translateY(-22px);
+  }
+}
+
 // Tablet and Mobile specific
 @media (max-width: 800px) { 
   // Get rid of learn statement
