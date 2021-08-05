@@ -70,7 +70,7 @@ function removeModal() {
 // Display the modal
 btn.onclick = function() {
     modal.style.display = "flex";
-    TweenMax.to(".modal", 0.5, {
+    TweenMax.to(".modal", 0.3, {
         opacity: 1,
         ease: Power2.easeInOut
     })
@@ -80,7 +80,7 @@ btn.onclick = function() {
 
 // Remove modal when clicling X
 span.onclick = function() {
-    TweenMax.to(".modal", 0.5, {
+    TweenMax.to(".modal", 0.3, {
         opacity: 0,
         ease: Power2.easeInOut
     })
@@ -92,7 +92,7 @@ span.onclick = function() {
 // Remove modal when clicling outside
 window.onclick = function(event) {
   if (event.target == modal) {
-    TweenMax.to(".modal", 0.5, {
+    TweenMax.to(".modal", 0.3, {
         opacity: 0,
         ease: Power2.easeInOut
     })
