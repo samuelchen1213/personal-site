@@ -75,6 +75,7 @@ btn.onclick = function() {
         ease: Power2.easeInOut
     })
     $("body").addClass("modal-open");
+    $(".banner").addClass("blurred");
 }
 
 // Remove modal when clicling X
@@ -85,6 +86,7 @@ span.onclick = function() {
     })
     setTimeout(removeModal, 500);
     $("body").removeClass("modal-open");
+    $(".banner").removeClass("blurred");
 }
 
 // Remove modal when clicling outside
@@ -96,5 +98,6 @@ window.onclick = function(event) {
     })
     setTimeout(removeModal, 500);
     $("body").removeClass("modal-open");
+    $(".banner").removeClass("blurred");
   }
 }

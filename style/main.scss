@@ -49,7 +49,6 @@ body {
   display: flex;
   flex-flow: column;
   
-  
   header {
     position: relative;
     top: 0;
@@ -512,6 +511,10 @@ body {
       padding-top: 0;
     }
   }
+}
+
+.blurred {
+  filter: blur(2px);
 }
 
 // For tall screens

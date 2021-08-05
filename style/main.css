@@ -428,6 +428,10 @@ body {
     padding-top: 0;
   }
 }
+.blurred {
+  filter: blur(2px);
+}
+
 @media (min-height: 800px) and (min-width: 1100px) {
   .container {
     transform: translateY(-22px);
