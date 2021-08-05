@@ -329,7 +329,7 @@ body {
   top: 0;
   left: 0;
   overflow: hidden; 
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0,0,0,0.7);
   justify-content: center;
   align-items: center;
   opacity: $myopacity; // GSAP
@@ -511,11 +511,6 @@ body {
       padding-top: 0;
     }
   }
-}
-
-.blurred {
-  filter: blur(2px);
-  transition: 0.3s;
 }
 
 // For tall screens
