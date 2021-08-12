@@ -26,7 +26,7 @@ function greetingAnimation() {
             smartBackspace: true,
             backDelay: 1500
         })
-    }, 300)
+    }, 4000)
 
     $(".overlay").remove();
 
