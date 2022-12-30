@@ -58,13 +58,10 @@ document.addEventListener('mousemove', function(e){
 // Add cursor-click style when mousedown
 document.addEventListener('mousedown', function(){
   cursorinner.classList.add('cursor-click')
+  setTimeout(() => {
+    cursorinner.classList.remove('cursor-click')
+  }, 200);
 });
-
-// Remove cursor-click style when mouseup
-document.addEventListener('mouseup', function(){
-  cursorinner.classList.remove('cursor-click')
-});
-
 
 // Cursor styling when hovering over a, buttons, i, and .close
 document.querySelectorAll('a, button, i, .close, #grit').forEach(item => {
