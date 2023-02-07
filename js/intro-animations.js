@@ -71,89 +71,89 @@ TweenMax.to("#p1", 2.5, {
 });
 
 TweenMax.from("#p2", 2.5, {
-    delay: baseDelay + 0.2,
+    delay: baseDelay + 0.5,
     // y: 15, 
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#p2", 2.5, {
-    delay: baseDelay + 0.2,
+    delay: baseDelay + 0.5,
     opacity: 1,
     ease: Power2.easeInOut
 });
 
 TweenMax.from("#p3, .zdog-container", 2.5, {
-    delay: baseDelay + 0.4,
+    delay: baseDelay + 0.8,
     // y: 15, 
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#p3, .zdog-container", 2.5, {
-    delay: baseDelay + 0.4,
+    delay: baseDelay + 0.8,
     opacity: 1,
     ease: Power2.easeInOut
 });
 
 TweenMax.from("#learn", 3, {
-    delay: baseDelay + 0.6,
+    delay: baseDelay + 1,
     // y: 15, 
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#learn", 3, {
-    delay: baseDelay + 0.6,
+    delay: baseDelay + 1,
     opacity: 1,
     ease: Power2.easeInOut
 })
 
 
 TweenMax.from("#item1", 1, {
-    delay: baseDelay + 1.5,
+    delay: baseDelay + 1.8,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#item1", 1, {
-    delay: baseDelay + 1.5,
+    delay: baseDelay + 1.8,
     opacity: 1,
     ease: Power2.easeInOut
 })
 TweenMax.from("#item2", 1, {
-    delay: baseDelay + 1.7,
+    delay: baseDelay + 2,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#item2", 1, {
-    delay: baseDelay + 1.7,
+    delay: baseDelay + 2,
     opacity: 1,
     ease: Power2.easeInOut
 });
 TweenMax.from("#item3", 1, {
-    delay: baseDelay + 1.9,
+    delay: baseDelay + 2.2,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#item3", 1, {
-    delay: baseDelay + 1.9,
+    delay: baseDelay + 2.2,
     opacity: 1,
     ease: Power2.easeInOut
 });
 TweenMax.from("#item4", 1, {
-    delay: baseDelay + 2.1,
+    delay: baseDelay + 2.3,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#item4", 1, {
-    delay: baseDelay + 2.1,
+    delay: baseDelay + 2.3,
     opacity: 1,
     ease: Power2.easeInOut
 });
 TweenMax.from("#item5", 1, {
-    delay: baseDelay + 2.3,
+    delay: baseDelay + 2.5,
     opacity: 0,
     ease: Power2.easeInOut
 });
 TweenMax.to("#item5", 1, {
-    delay: baseDelay + 2.3,
+    delay: baseDelay + 2.5,
     opacity: 1,
     ease: Power2.easeInOut
 });
