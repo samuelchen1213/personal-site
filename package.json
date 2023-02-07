@@ -4,7 +4,7 @@
   "description": "",
   "main": "text-transform.js",
   "scripts": {
-    "sass": "node-sass -w scss/ -o css/ --recursive"
+    "sass": "sass -w style/main.scss:style/main.css"
   },
   "repository": {
     "type": "git",

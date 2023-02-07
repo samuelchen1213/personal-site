@@ -153,7 +153,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 7px;
-  background: rgba(0, 0, 0, 0.25);
+  background: hsla(0deg, 0%, 0%, 0.25);
   will-change: transform;
   transform: translateY(2px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -165,7 +165,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 7px;
-  background: linear-gradient(to left, #522600 0%, #a34c00 8%, #a34c00 92%, #522600 100%);
+  background: linear-gradient(to left, hsl(28deg, 100%, 16%) 0%, hsl(28deg, 100%, 32%) 8%, hsl(28deg, 100%, 32%) 92%, hsl(28deg, 100%, 16%) 100%);
 }
 .banner .container .content .contact .media .resume-button .front {
   font-family: "Roboto Mono";
@@ -177,7 +177,7 @@ body {
   border-radius: 7px;
   font-size: 1rem;
   color: white;
-  background: #ee9649;
+  background: hsl(28deg, 83%, 61%);
   will-change: transform;
   transform: translateY(-4px);
   transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
@@ -327,7 +327,7 @@ body {
 
 .modal-open {
   overflow: hidden;
-  position: fixed;
+  position: relative;
 }
 
 .cursor {
@@ -404,11 +404,9 @@ body {
   #threejs {
     display: block;
   }
-
   .modal-content {
     width: 65% !important;
   }
-
   .banner header {
     padding-bottom: 0;
   }
@@ -437,46 +435,36 @@ body {
   #learn {
     display: none;
   }
-
   .zdog-container {
     pointer-events: none;
   }
-
   * {
     cursor: default;
   }
-
   #infoicon:hover {
     cursor: pointer;
     color: #EE964B;
   }
-
   .close:hover,
-.close:focus {
+  .close:focus {
     cursor: pointer;
   }
-
   .resume-button:hover .front {
     cursor: pointer;
   }
-
   #grit:hover {
     cursor: pointer;
   }
-
   #item1:hover i, #item2:hover i, #item3:hover i, #item4:hover i, #item5:hover i {
     color: #EE964B;
     cursor: pointer;
   }
-
   .cursor {
     display: none;
   }
-
   .follower {
     display: none;
   }
-
   .follow-text {
     display: none;
   }

@@ -400,7 +400,7 @@ body {
 // Prevents user from scrolling in the back
 .modal-open {
   overflow: hidden;
-  position: fixed;
+  position: relative;
 }
 
 .cursor {
@@ -460,10 +460,9 @@ body {
   opacity: 0;
 }
 
-// need to change to 30px
 .cursor-click {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   opacity: .85;
 }
 
@@ -498,7 +497,7 @@ body {
       flex: 1;
 
       .content {
-        width: 55%;
+        width: 50%;
       }
 
       .zdog-container {
