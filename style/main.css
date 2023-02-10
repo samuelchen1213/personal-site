@@ -87,12 +87,12 @@ body {
 .banner .container .content #greeting {
   font-family: "Roboto Mono";
   color: white;
-  font-size: 4.8em;
+  font-size: 4.9em;
   transform: translateX(-3px);
 }
 .banner .container .content #intro {
   color: white;
-  font-size: 2em;
+  font-size: 1.8em;
   opacity: 0;
 }
 .banner .container .content #intro #name {

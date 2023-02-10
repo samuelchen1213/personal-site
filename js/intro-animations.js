@@ -18,7 +18,8 @@ function greetingAnimation() {
             strings:[
                 'and I love to learn',
                 'and I love to create',
-                'and I love to lead',
+                'and I love dairy',
+                'and I\'m lactose intolerant',
                 'and here\'s my site'
             ],
             backSpeed: 55,
