@@ -17,8 +17,6 @@ window.addEventListener('resize', () => {
     camera.updateProjectionMatrix();
 })
 
-
-
 // Add a light
 var light1 = new THREE.PointLight(0xFFFFFF, 1.7, 1000)
 light1.position.set(150,15,15);
